@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Variáveis globais */
+:root {
+    --font-default: 'Courier New', Courier, monospace;
+}
+
+.light-theme {
+    --bg-color: white;
+    --font-color: #333;
+}
+
+.dark-theme {
+    --bg-color: black;
+    --font-color: #f5f5f5;
+}
