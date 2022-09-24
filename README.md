@@ -1,2 +1,3 @@
-# learning-js
-Estudos de JS
+# Learning JS
+
+Estudos de Javascript
