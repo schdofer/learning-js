@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-defeault);
+}
+
+main {
+    display: flex;
+    padding: 30px;
+}
+
+main section {
+    width: 50%;
+    padding: 20px;
+}
+
+main section p {
+    margin-bottom: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 50%;
+    padding: 5px;
+}
+
+#resolucao button {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#resolucao button:hover{
+    background-color: blueviolet;
+}
+
+#resultado {
+    background-color: lightpink;
+    padding: 15px;
+    margin-top: 20px;
+
+}

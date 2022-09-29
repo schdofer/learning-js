@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(variables.css);
+
+button {
+    margin: 20px;
+    padding: 5px;
+}
+
+#box {
+    padding: 20px;
+    background-color: blue;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
