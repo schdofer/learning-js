@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+boby{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-default);
+}
+
+main{
+    display: flex;
+    padding: 30px;
+}
+
+main section{
+    width: 50%;
+    padding: 20px;
+
+}
+
+main section p{
+    margin: 10px;
+}
+
+.title{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box input{
+    width: 50%;
+    padding: 5px;
+}
+
+#resolucao button{
+    padding: 5px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#resultado{
+    background-color: green;
+    padding: 15px;
+}
+
+.sucesso{
+    background-color: green;
+}
+
+.erro{
+    background-color: red;
+}
+

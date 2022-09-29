@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+:root{
+   --font-family: 'Courier New', Courier, monospace;
+   --bg-color: #f4f4f4;
+   --font-color : black;
+}
