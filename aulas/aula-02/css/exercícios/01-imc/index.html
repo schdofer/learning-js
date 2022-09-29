@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercício1 IMC</title>
+</head>
+
+<body>
+
+    <main class="light-theme">
+        <section id="enunciado">
+            <h2 class="title">Exercício:</h2>
+            <h3>Cálculo IMC</h3>
+            <p>O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado
+                dividindo o peso (em kg) pela altura ao quadrado (em metros).
+                IMC = Peso ÷ (Altura × Altura)</p>
+            <p>Obtenha o valor do peso em KG e da altura em metros, realize o cálculo e apresente ao usuário (de acordo
+                com
+                tabela abaixo):
+                Menor que 18,5 = abaixo do peso.</p>
+            <p>Obtenha o valor do peso em KG e da altura em metros, realize o cálculo e apresente ao usuário (de acordo
+                com
+                tabela abaixo):
+                Menor que 18,5 = abaixo do peso.</p>
+            <ul>
+                <li>Entre 18,5 e 24,9 = peso normal.</li>
+                <li>Entre 25 e 29,9 = sobrepeso.</li>
+                <li>Entre 30 e 34,99 = obesidade grau I.</li>
+                <li>Entre 35 e 39,99 = obesidade grau II (severa).</li>
+                <li>Acima de 40 = obesidade grau III (mórbida).</li>
+
+            </ul>
+        </section>
+
+        <section id="resolucao">
+            <h2 class="title">resolucao</h2>
+
+            <div class="input-box">
+                <label for="peso">Peso</label>
+                <input type="text" name="peso" id="peso" />
+            </div>
+
+            <div class="input-box">
+                <label for="altura">Altura</label>
+                <input type="text" name="altura" id="altura" />
+            </div>
+
+            <button onclick="calcularIMC()">Calcular IMC</button>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:root {
+    --font-default: 'Courier New', Courier, monospace; 
+    --title-color:purple;
+}
+
+.light-theme {
+    --bg-color: #f4f44f4;
+}
+
+.dark-theme {
+    --bg-color: black;
+}
