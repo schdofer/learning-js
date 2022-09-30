@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+:root {
+    --font-default: 'Courier New', Courier, monospace;
+    --title-color: purple;
+    --enunciado-color: #ccc;
+    --resolucao-color: white;
+}
