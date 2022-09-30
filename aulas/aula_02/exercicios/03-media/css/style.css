@@ -6,6 +6,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: var(--font-defeault);
+    background-image: radial-gradient(circle, #e9d9ff 50%, #cdb4db);
 }
 
 main {
@@ -19,7 +20,8 @@ main section {
 }
 
 main section p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .title {
@@ -34,39 +36,38 @@ main section p {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    color: #a0001c;
-    font-weight: bold;
+    color: #0c5e50;
 }
 
 .input-box input {
-    width: 50%;
+    width: fit-content;
     padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #696868;
+
 }
 
 #resolucao button {
     padding: 5px;
     cursor: pointer;
-    background-color: #f8f9fa;
+    background-color: #fff0f3;
+    color: #5158bb;
+    font-weight: bold;
     border-radius: 20px;
-    border-style: ridge;
-    border-color: #003049;
+    border-color: #ffb3c1;
     border-width: thin;
-    box-shadow: 0px 2px 2px #407ba7;
-    /* x, y ,blur, color */
+    box-shadow: 0px 3px 2px #adb5bd;
 }
 
-/* quando passamos o mouse em cima do elemento */
 #resolucao button:hover {
-    background-color: #90c8eb;
-    box-shadow: 0px 2px 2px #00273b;
+    background-color: #ff7096;
+    box-shadow: 0px 3px 2px #6c757d;
     color: #f8f9fa;
     ;
 }
 
-/* quando ativamos o elemento */
 #resolucao button:active {
     position: relative;
-    /*posicionado em relação a sua posição normal */
     top: 3px;
 
 }
@@ -74,16 +75,16 @@ main section p {
 #resultado {
     padding: 8px;
     margin-top: 20px;
-    color: #f8f9fa;
+    color: #000000;
     width: fit-content;
-    border-radius: 10px;
-    /* caixa não se expande além de max e não diminui além de min */
 }
 
-.sucesso {
-    background-color: #004e89;
+.aprovado {
+    background-color: #ffafcc;
+    border-radius: 15px;
 }
 
-.erro {
-    background-color: #c00021;
+.reprovado {
+    background-color: #779be7;
+    border-radius: 15px;
 }

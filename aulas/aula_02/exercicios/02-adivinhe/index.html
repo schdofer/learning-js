@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section id="enunciado">
+            <h2 class="title">Exercício</h2>
+            <h3>Adivinhe o Nome</h3>
+            <p>Exiba uma mensagem de boas vindas ao usuário e informe uma lista de 10 nomes.</p>
+            <p>Dentre estes nomes, um você já terá com selecionado em seu sistema.</p>
+            <p>Peça que o usuário adivinhe qual o nome escolhido, escolhendo uma das opções.</p>
+            <p>Caso ele escolha o nome correto, exiba a mensagem: </p>
+            <p>“Parabéns, você venceu! Escolheu o nome correto.”</p>
+            <p>Caso ele escolha o nome incorreto, exiba a mensagem:</p>
+            <p>“Tente novamente mais tarde.”</p>
+
+        </section>
+
+        <section id="resolucao">
+            <h2 class="title">Resolução</h2>
+            <div class="nomes">
+                <h4>Estou pensando em um nome e você deve tentar adivinhar qual seria esse nome.
+                    <br>Você tem apenas 3 (três) tentativas!
+                    <br>Seguem as opções e boa sorte!
+                    <br><br>Ps: Atente-se para a letra maiúscula e os acentos 😉
+                </h4>
+                <ul>
+                    <li>Natália</li>
+                    <li>Jéssica</li>
+                    <li>Larissa</li>
+                    <li>Vanessa</li>
+                    <li>Camila</li>
+                    <li>Yura</li>
+                    <li>Fernando</li>
+                    <li>Marcelo</li>
+                    <li>Franco</li>
+                    <li>Tiago</li>
+                </ul>
+            </div>
+            <div class="input-box">
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome aqui">
+                <button onclick="adivinhar()">Advinhar</button>
+                <div id="resultado"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
