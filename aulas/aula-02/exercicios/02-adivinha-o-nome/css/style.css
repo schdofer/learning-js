@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+body section {
+    padding: 30px;
+    width: 50%;
+}
+
+section#enunciado {
+    background-color: #f4f4f4;
+}
+
+section div {
+    margin-bottom: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+input[type=radio], label[for] {
+    cursor: pointer;
+}
+
+#feedback {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sucesso {
+    background-color: lightgreen;
+}
+
+.erro {
+    background-color: lightcoral;
+}
