@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js" charset="UTF-8" defer></script>
-
+    <script src="js/script" charset="UTF-8" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Exercicio IMC</title>
 </head>
 <body>
     <main class="ligth-theme">
-       <section id="enunciado">
+       <section id="exercicio" >
            <h2 class="title">Exercicio:</h2>
            <h3>Calculo ICM</h3>
            <p>
@@ -32,7 +31,6 @@
                 <li>Entre 35 e 39,99 = obesidade grau II</li>
                 <li>Acima de 40 = obsidade morbida = obesidade grau III</li>
              </ul>
-
        </section>
 
        <section id="resolucao">
@@ -45,9 +43,12 @@
                <label for="altura">Altura</label> 
                <input type="text" name="altura" id="altura">
             </div>
-            <button onclick="calcularICM()">Calcular IMC</button>
+            <button onclick="calcularIMC()">Calcular IMC</button>
             <div id="resultado"></div>
 
+             <div id="diagnostico">
+
+             </div>
        </section>
     </main>
 </body>
