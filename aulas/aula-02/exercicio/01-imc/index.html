@@ -37,18 +37,16 @@
            <h2 class="title"> Resolução:</h2>
            <div  class="input-box">
               <label for="peso">Peso</label> 
-              <input type="text" name="peso" id="peso">
+              <input onclick="limpamensagem('resultado', 'diagnostico')" type="text" name="peso" id="peso">
            </div>
            <div  class="input-box">
                <label for="altura">Altura</label> 
-               <input type="text" name="altura" id="altura">
+               <input onclick="limpamensagem('resultado', 'diagnostico')" type="text" name="altura" id="altura">
             </div>
             <button onclick="calcularIMC()">Calcular IMC</button>
             <div id="resultado"></div>
 
-             <div id="diagnostico">
-
-             </div>
+             <div id="diagnostico"> </div>
        </section>
     </main>
 </body>

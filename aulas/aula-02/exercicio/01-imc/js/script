@@ -2,11 +2,11 @@ function calcularIMC (){
     //obter os elementos da tela - input
     const peso = document.getElementById('peso').value;
     const altura = document.getElementById('altura').value;
+    const resultado = document.getElementById('resultado');
+    const diagnostico = document.getElementById('diagnostico');
 
     if(!peso || !altura){
-        document.getElementById('resultado').style.backgroundColor = 'red';
-        resultado.innerHTML = `ERRO: Peso e/ou altura não informada!`;
-
+        mensagem(resultado, 'erro', 'red',  `ERRO: Peso e/ou altura não informada!`);
         return;
     }
 
@@ -14,31 +14,30 @@ function calcularIMC (){
     let imc = (peso / (altura * altura) ).toFixed(2);
 
     // apresentar o resultado
-    resultado.innerHTML = `RESULTADO: ${imc}`;
-    document.getElementById('resultado').style.backgroundColor = 'green';
+    mensagem(resultado, 'erro', 'coral', `RESULTADO: ${imc}`);
 
-    if (imc < 18.6){
-        diagnostico.innerHTML = `DIAGNÓSTICO - ALERTA:   Abaixo do peso.`;
-        document.getElementById('diagnostico').style.backgroundColor = 'yellow';
-    } 
-    else if  (imc >= 18.5 &&  imc <= 24.9){
-        diagnostico.innerHTML = `DIAGNÓSTICO: Peso Normal.`;
-        document.getElementById('diagnostico').style.backgroundColor = 'darkseagreen';
+
+    if (imc < 18.6)
+        mensagem(diagnostico, 'alerta', 'yellow','DIAGNÓSTICO - ALERTA:   Abaixo do peso.'); 
+    else if  (imc >= 18.5 &&  imc <= 24.9)
+        mensagem(diagnostico, 'alerta', 'green', `DIAGNÓSTICO: Peso Normal.`);    
+    else if (imc >= 25 && imc <= 29.9)
+        mensagem(diagnostico, 'alerta', 'yellow', `DIAGNÓSTICO ALERTA: Sobrepeso.`);    
+    else if (imc >= 30 && imc <= 34.99)
+        mensagem(diagnostico, 'alerta', 'red', `DIAGNÓSTICO - PERIGO:  Obesidade Grau I.`);    
+    else if (imc >= 35 && imc <= 39.99)
+        mensagem(diagnostico,'alerta', 'red', `DIAGNÓSTICO - PERIGO:  Obesidade Grau II`);
+    else  
+       mensagem(diagnostico,'alerta', 'red',`DIAGNÓSTICO - PERIGO:  Obesidade Morbida = Obesidade Grau III.`);
+    
+    function mensagem(element, type, color, mensagem){
+          element.innerHTML = mensagem;
+          element.style.backgroundColor = color;
+          element.style.display = 'flex';
     }
-    else if (imc >= 25 && imc <= 29.9){
-        diagnostico.innerHTML = `DIAGNÓSTICO ALERTA: Sobrepeso.`;
-        document.getElementById('diagnostico').style.backgroundColor = 'yellow';
-    }
-    else if (imc >= 30 && imc <= 34.99){
-        diagnostico.innerHTML = `DIAGNÓSTICO - PERIGO:  Obesidade Grau I.`;
-        document.getElementById('diagnostico').style.backgroundColor = 'red';
-    }
-    else if (imc >= 35 && imc <= 39.99){
-        diagnostico.innerHTML = `DIAGNÓSTICO - PERIGO:  Obesidade Grau II`;
-        document.getElementById('diagnostico').style.backgroundColor = 'red';
-    }
-    else{
-        diagnostico.innerHTML = `DIAGNÓSTICO - PERIGO:  Obesidade Morbida = Obesidade Grau III.`;
-        document.getElementById('diagnostico').style.backgroundColor = 'red';
-    }
+}
+
+function limpamensagem(element, element1){
+    document.getElementById(element).style.display = 'none';
+    document.getElementById(element1).style.display = 'none';
 }
