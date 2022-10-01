@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(variables.css);
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-default);
+    display: flex;
+}
+
+main section {
+    width: 50%;
+}
+
+main section p {
+    margin: 15px 0;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+text-transform: uppercase;
+color: blue;
+margin-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 1.6em;
+}
