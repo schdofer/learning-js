@@ -1,0 +1,19 @@
+function opcao(value){
+   const nome = 'Franco';
+   const resultado = document.getElementById('resposta');
+
+   switch (value) {
+       case nome: 
+           mensagem(resultado, 'green','PARABÉNS - NOME ENCONTRADO!!!');
+           break;           
+       default:
+           mensagem(resultado, 'red','ERRO - TENTE NOVAMENTE');
+           break;
+   }
+   
+   function mensagem(element, color, msg){
+      element.innerHTML = msg;
+      element.style.backgroundColor = color;
+      element.style.display = 'flex';
+   }
+}

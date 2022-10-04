@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script" charset="UTF-8" defer></script> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <section id="exercicio">
+            
+           <h2 class="title">EXERCICIO:</h2>
+           <h3> Adivinhe o nome</h3>
+            <p>
+               Exiba uma mensagem de boas vindas ao usuário e informe uma lista de 10 nomes.
+               Dentre estes nomes, um você já terá com selecionado em seu sistema.
+            </p>
+
+            <p>
+               Peça que o usuário adivinhe qual o nome escolhido, escolhendo uma das opções.
+            </p>
+
+            <p>
+                Caso ele escolha o nome correto, exiba a mensagem: 
+            </p>
+
+            <p>
+                “Parabéns, você venceu! Escolheu o nome correto.”
+            </p>
+            <p>
+                Caso ele escolha o nome incorreto, exiba a mensagem:
+                “Tente novamente mais tarde.”
+            </p>
+        </section>
+
+        <section id="resolucao">
+            <h2 class="title">RESOLUÇÃO:</h2>
+
+            <input onclick="opcao(value)" type="radio" name="fav_language" value="Tiago">
+            <label for="tiago">Tiago</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Janaina">
+            <label for="janaina">Janaina</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Bruna">
+            <label for="bruna">Bruna</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Fernando">
+            <label for="fernando">Fernando</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Diogo">
+            <label for="diogo">Diogo</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Diego">
+            <label for="diego">Diego</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Katia">
+            <label for="katia">Katia</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Franco">
+            <label for="franco">Franco</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Eliseu">
+            <label for="eliseu">Eliseu</label><br>
+            <input onclick="opcao(value)"  type="radio" name="fav_language" value="Marcia">
+            <label for="marcia">Marcia</label><br>
+
+            <div>
+                <div id="resposta"></div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
