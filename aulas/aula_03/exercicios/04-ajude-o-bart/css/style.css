@@ -2,15 +2,26 @@
 @import url(reset.css);
 @import url(variables.css);
 
+
+body {
+    background-color: #9aad54;
+    ;
+}
+
+
 main {
     width: 100%;
-    height: 100vh;
-    background-color: var(--bg-default);
+    height: 90vh;
     display: flex;
+    margin: 10px;
+    color: #f2e8cf;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 main section {
     width: 50%;
+    padding: 15px;
 }
 
 main section p {
@@ -22,11 +33,51 @@ main section p {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
-text-transform: uppercase;
-color: blue;
-margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #bc4749;
+    margin-bottom: 20px;
 }
 
-.subtitle{
+.subtitle {
     font-size: 1.6em;
+}
+
+ul{
+    padding: 20px;
+    color:  #734410;
+    font-weight: bold;
+
+}
+
+section button {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 110px;
+    height: 30px;
+    border-width: thin;
+    color: #026429;
+    font-weight: bold;
+    box-shadow: 0px 3px 2px #656a6e;
+}
+
+
+#escrita {
+    /* background-color: #026429; */
+    background-image: radial-gradient(circle,  #03722f 2%, #01411a);
+    color: rgb(231, 250, 250);
+    width: 550px;
+    height: 400px;
+    border: solid 10px;
+    border-color: #734410;
+
+}
+
+.imagem {
+    width: 130px;
+    height: 180px;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+    padding: 10px;
 }

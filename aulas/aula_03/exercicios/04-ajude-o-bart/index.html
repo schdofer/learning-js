@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,40 @@
     <script src="js/script.js" charset="UTF-8" defer></script>
     <title>Ajude o Bart</title>
 </head>
+
 <body>
-    
 
     <main>
         <section id="enunciado">
             <h2 class="title">Enunciado</h2>
             <h3 class="subtitle">Ajude o Bart</h3>
-<p>
-    Bart Simpson frequentemente apronta na escole e precisa escrever repetidas frases no quadro.
-    Desta vez ele precisa escrever intercaladamente as seguintes frases até encher o quadro.
-</p>
+            <p>
+                Bart Simpson frequentemente apronta na escole e precisa escrever repetidas frases no quadro.
+                Ajude o Bart a escrever duas destas frases no quadro para que ele seja liberado da detenção!
+            <ul class="frases">
+                <li>Não vou mirar na cabeça</li>
+                <li>Eu não vou encorajar o Ralph a voar</li>
+                <li>Não instigarei uma revolução</li>
+                <li>Eu não vou passar sabão nas escadas</li>
+                <li>Explosivos e a escola não se misturam</li>
+            </ul>
 
-<p>
-    Pergunte ao Bart quais as 2 frases que ele precisa escrever, por exemplo:</p>
-    <ul>
-    <li>1) “Não andarei de skate no corredor da escola”</li> 
-    <li>2) “Eu não vou encorajar o Ralph a voar”</li>
-</ul>
-<p>Sabendo que para encher o quadro é preciso escrever cada uma das frases 25 vezes, ajude o Bart a concluir esta tarefa.</p>
+            <button onclick="sortearFrase()">Ajude o Bart</button>
 
         </section>
         <section id="resolucao">
             <h2 class="title">Resolução</h2>
+            <div id="quadro">
+                
+                <p id="escrita"></p>
 
-        </section>
+                <img src="https://i.pinimg.com/originals/6f/03/5d/6f035df69a00b12786dc28913a6e13e8.png" class="imagem">
+            </div>
     </main>
-
-
-
-
-
-
 </body>
+
+
+
+
+
 </html>
