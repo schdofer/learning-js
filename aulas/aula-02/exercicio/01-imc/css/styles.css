@@ -32,6 +32,17 @@ main section p{
     margin: 10px;
 }
 
+#botao{    
+    border-radius: 10px;
+    background-color: darkgray;
+    cursor: pointer;
+    border-style: none;
+    height: 40px;
+    width: 30%;
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+
 .title{
     text-transform: uppercase;
     text-decoration: underline;
@@ -45,6 +56,7 @@ main section p{
     flex-direction: column;
     margin-bottom: 15px;
     text-align: center;
+    border-radius: 10px;
  }
 
 .input-box input{
@@ -52,17 +64,11 @@ main section p{
     padding: 10px;    
     margin-left: 25%;
     text-align: center;
+    border-radius: 10px;
 }    
 
-#resolucao button{
-    padding: 6px;
-    cursor: pointer;
-    margin-left: 40%;
-    margin-bottom: 10px;
-
-}
-
 #resultado{
+    display: flex;
     background-color: white;
     padding: 15px;
     color:white;
@@ -70,7 +76,6 @@ main section p{
     text-align: center;
     border-radius: 10px;
 }
-
 
 #diagnostico{
     display: flex;
