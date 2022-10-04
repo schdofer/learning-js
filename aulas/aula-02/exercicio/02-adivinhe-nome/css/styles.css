@@ -41,6 +41,18 @@ main section label:hover{
     font-size: 30px;
 }
 
+#boasvindas{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    background-color: dimgrey;
+    color: white;
+    border-radius: 10px;
+    border-style: solid; 
+    padding: 20px;   
+}
+
 #exercicio{
     width: 50%;
     padding: 20px;
