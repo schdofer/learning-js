@@ -4,10 +4,11 @@
 
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:darkorange; left:200px; top:0px;}
-    50%  {background-color:blue; left:300px; top:000px;}
-    75%  {background-color:green; left:400px; top:000px;}
-    100% {background-color:red; left:500px; top:0px;}
+    20%  {background-color:darkorange; left:200px; top:0px;}
+    40%  {background-color:blue; left:300px; top:000px;}
+    65%  {background-color:green; left:400px; top:000px;}
+    80% {background-color:red; left:600px; top:0px;}
+    100% {background-color:red; left:670px; top:0px;}
  }
   
 body{
