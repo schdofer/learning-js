@@ -62,7 +62,7 @@ main section label:hover{
     border-radius: 10px;
     border-style: solid; 
     padding: 20px; 
-    animation: example 5s linear 2s infinite alternate-reverse;      
+    animation: example 5s linear 1s infinite alternate;      
 }
 
 #exercicio{
