@@ -2,6 +2,14 @@
 @import url(variaveis.css);
 @import url(reset.css);
 
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:darkorange; left:200px; top:0px;}
+    50%  {background-color:blue; left:300px; top:000px;}
+    75%  {background-color:green; left:400px; top:000px;}
+    100% {background-color:red; left:500px; top:0px;}
+ }
+  
 body{
     width: 100%;
     height: 100vh;
@@ -42,15 +50,18 @@ main section label:hover{
 }
 
 #boasvindas{
-    display: inline-block;
-    width: 100%;
+    position: relative;
+    width: 50%;
     text-align: center;
+    left: 0px;
+    margin: 0;
 
     background-color: dimgrey;
     color: white;
     border-radius: 10px;
     border-style: solid; 
-    padding: 20px;   
+    padding: 20px; 
+    animation: example 5s linear 2s infinite alternate-reverse;      
 }
 
 #exercicio{
