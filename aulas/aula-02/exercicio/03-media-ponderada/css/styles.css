@@ -44,7 +44,9 @@ main section h3{
 }
 
 #resolucao div input{
-      text-align: center;
+    text-align: center;
+    
+    
 }
 
 #resolucao div input:hover{
