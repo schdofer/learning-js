@@ -1,0 +1,45 @@
+function calcular(){   
+   const resultado = document.getElementById('resultado');
+   const input1 = document.getElementById('nota1');
+   const input2 = document.getElementById('nota2');
+   
+   if (document.getElementById('botao').value == 'Calcular'){
+      document.getElementById('botao').value = 'Novo aluno';
+      input1.disabled = true;
+      input2.disabled = true;
+   }
+   else{
+      document.getElementById('botao').value = 'Calcular';
+      input1.disabled = false;
+      input2.disabled = false;
+      limpar();
+      return;
+   }
+   
+   const nota1 = parseFloat(document.getElementById('nota1').value);
+   const nota2 = parseFloat(document.getElementById('nota2').value);
+
+   if (!nota1 || !nota2){
+       mensagem(resultado, 'ERRO', 'red', 'ERRO - NOTA1 e/ou NOTA2, não informada');  
+      return;    
+   }
+   
+   let media = ((nota1 + (nota2*2))/3).toFixed(2);
+
+   if (media < 60)
+      mensagem(resultado,'OK', 'red', `Média do Aluno: ${media} - EM RECUPERAÇÃO`)
+   else
+      mensagem(resultado,'OK', 'green', `Média do Aluno : ${media} -  APROVADO`);
+
+   function limpar(){
+      document.getElementById('nota1').value = '';
+      document.getElementById('nota2').value = '';     
+      document.getElementById('resultado').display = 'none';
+   }
+
+   function mensagem(element, type, color, msg){
+       element.innerHTML = msg;
+       element.style.backgroundColor = color;
+       element.style.display = 'flex';
+   }
+}

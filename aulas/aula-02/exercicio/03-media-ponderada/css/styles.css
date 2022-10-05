@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url(variaveis.css);
+@import url(reset.css);
+
+body{
+    font-family: var(--font-default);
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    padding: 30px;
+}    
+
+main section{
+    margin: 5px;
+    height: 280px;
+}
+
+main section p {
+    text-align: justify;
+    margin: 10px;
+}
+
+main section h3{
+    text-align: center;
+}
+
+#exercicio{
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: lightgrey
+}
+
+#resolucao{
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: lightgrey;
+    margin-left: 2px;
+    padding: 10px;
+}
+
+#resolucao div input{
+      text-align: center;
+}
+
+#resolucao div input:hover{
+    background-color: darkkhaki;
+}
+
+#botao{
+    margin: 10px;
+    width: 30%;
+    height: 15%;
+    border-radius: 10px;
+    border-style: solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#botao:hover{
+    background-color: aquamarine;
+}
+
+#resultado{
+    display: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    background-color: green;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.title{
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+    text-align: center;
+    color: var(--title-color);
+    text-decoration: underline;    
+}
+
+
+.notas{
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;        
+}
+
+
+

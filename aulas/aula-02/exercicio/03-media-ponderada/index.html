@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script" charset="UTF-8" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <main>
+         <section id="exercicio">
+              <h2 class="title">EXERCÍCIO</h2>
+              <h3>Média ponderada</h3>
+              <p>
+                  Construa um programa que obtém 2 notas de um dado aluno e realiza a média ponderada.
+                  Para média ponderada, considere que a nota1 terá peso 1 e a nota2 terá peso 2.
+              </p>
+              <p>
+                 Caso a média esteja igual ou maior que 7, exiba:
+                 “Parabéns, você foi aprovado!”
+              </p>
+              <p>
+                 Caso a média seja menor que 7, exiba:
+                 “Infelizmente você foi reprovado.”
+              </p>
+         </section>
+
+         <section id="resolucao">
+              <h2 class="title">RESOLUÇÃO</h2>
+              <div  class="input-box">
+                   <label for="nota1">Nota 1</label><br>
+                   <input class="notas" type="text" name="nota1" id="nota1">
+              </div>
+              <div  class="input-box">
+                  <label for="nota2">Nota 2</label><br>
+                  <input class="notas" type="text" name="nota2" id="nota2">
+              </div>
+              <input id="botao" onclick="calcular()" type="button" value="Calcular">
+
+              <div id="resultado"></div>
+         </section>
+    </main>
+    
+</body>
+</html>

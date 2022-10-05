@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+:root{
+    --bg-color: #f3f3f3;
+    --font-default: 'Courier New', Courier, monospace;
+    --title-color: red;
+}
+
+.ligth-theme{
+    --bg-color: #f3f3f3;
+}
+
+.dark-theme{
+    --bg-color: black;
+}
