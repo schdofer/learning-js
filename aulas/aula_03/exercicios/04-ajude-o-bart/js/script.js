@@ -11,15 +11,10 @@ function sortearFrase() {
     let sortearFrase2 = parseInt(Math.random() * 5)
     let frase1 = frases[sortearFrase1]
     let frase2 = frases[sortearFrase2]
-    if (frase1 == frase2) {
-        sortearFrase2 = parseInt(Math.random() * 5);
-    }
-    // let escritaQuadro = document.getElementById('escrita')
-    let escritaQuadro = frase1 + frase2
-    escrita.innerHTML = escritaQuadro
-   
-   while (escrita.innerHTML < 25){
-    escrita.innerHTML = escritaQuadro
-   }
+   const escrita = document.getElementById('escrita');
 
+    if (frase1 == frase2) {
+        sortearFrase1 = parseInt(Math.random() * 5);
+    }
+    
 }

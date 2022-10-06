@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+#title {
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4.5em;
+  padding: 15px;
+  width: fit-content;
+  animation: neon 3s infinite;
+}
+
+@keyframes neon {
+
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: #f3faf7 0 0 12px, #ff0103 0 0 34px, #dc1405 0 0 34px;
+  }
+
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
+
+section h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 16%;
+  color: #d00000;
+  padding: 10px;
+  text-align: center;
+  width: max-content;
+  font-size: 1.5em;
+  text-shadow: 0.5px 1px 3px #f1ecec;
+}
+
+#portas {
+  margin-left: 180px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px
+}
+
+/* #portas span {
+  
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f1ecec;
+  padding-left: 150px;
+  width: fit-content;
+ 
+}
+
+#portas #saida {
+  background-color: #005d30;
+ padding-left:0px;
+ border: solid;
+ border-color: #f1ecec;
+ margin-left: 170px;
+} */
+
+
+.portabtn {
+  background-color: blueviolet;
+  height: 260px;
+  width: 250px;
+  background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/gate-5772032-4829265.png");
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border: none;
+}
+
+.placa {
+  background-color: #955333;
+  color: #111111;
+  position: relative;
+  bottom: 70px;
+  padding: 4px 4px;
+  border: 1.5px solid;
+  border-color: #29150c;
+  box-shadow: 3px 4px 5px #000000;
+  border-radius: 3px;
+}
+
+.saida {
+  background-color: #005e31;
+  color: #f1ecec;
+  position: relative;
+  bottom: 65px;
+  padding: 4px 4px;
+  border: 1.5px solid;
+  border-color: #d4b28d;
+  box-shadow: 3px 4px 5px #000000;
+  border-radius: 3px;
+}
