@@ -42,9 +42,9 @@ main section p {
     font-size: 1.6em;
 }
 
-ul{
+ul {
     padding: 20px;
-    color:  #734410;
+    color: #734410;
     font-weight: bold;
 
 }
@@ -62,22 +62,29 @@ section button {
 }
 
 
-#escrita {
-    /* background-color: #026429; */
-    background-image: radial-gradient(circle,  #03722f 2%, #01411a);
+#quadro {
+    background-image: radial-gradient(circle, #03722f 2%, #01411a);
     color: rgb(231, 250, 250);
-    width: 550px;
-    height: 400px;
+    width: 650px;
+    height: 450px;
     border: solid 10px;
     border-color: #734410;
+}
+
+#escrita {
+    color: #e0e0e0;
+    margin: 8px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
 
 }
 
 .imagem {
-    width: 130px;
-    height: 180px;
+    width: 140px;
+    height: 190px;
     position: relative;
-    left: 200px;
-    bottom: 150px;
+    left: 230px;
+    bottom: 140px;
     padding: 10px;
 }

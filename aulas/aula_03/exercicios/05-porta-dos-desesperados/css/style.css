@@ -28,36 +28,20 @@ main {
   font-size: 4.5em;
   padding: 15px;
   width: fit-content;
-  animation: neon 3s infinite;
+  text-shadow: 5px 7px 8px #d00000;
 }
 
-@keyframes neon {
-
-  0%,
-  39%,
-  41%,
-  59%,
-  61%,
-  100% {
-    text-shadow: #f3faf7 0 0 12px, #ff0103 0 0 34px, #dc1405 0 0 34px;
-  }
-
-  40%,
-  60% {
-    text-shadow: none;
-  }
-}
 
 section h3 {
   display: flex;
   align-items: center;
   margin-left: 16%;
-  color: #d00000;
+  color: #af0208;
   padding: 10px;
   text-align: center;
   width: max-content;
   font-size: 1.5em;
-  text-shadow: 0.5px 1px 3px #f1ecec;
+  text-shadow: 0px 0px 6px #f1ecec;
 }
 
 #portas {
@@ -69,25 +53,6 @@ section h3 {
   flex-wrap: wrap;
   gap: 100px
 }
-
-/* #portas span {
-  
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #f1ecec;
-  padding-left: 150px;
-  width: fit-content;
- 
-}
-
-#portas #saida {
-  background-color: #005d30;
- padding-left:0px;
- border: solid;
- border-color: #f1ecec;
- margin-left: 170px;
-} */
-
 
 .portabtn {
   background-color: blueviolet;
@@ -121,4 +86,38 @@ section h3 {
   border-color: #d4b28d;
   box-shadow: 3px 4px 5px #000000;
   border-radius: 3px;
+}
+
+#resultado {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.monstro {
+  position: relative;
+  bottom: 50px;
+  margin-left: 25%;
+  text-shadow: 0.5px 0px 50px #d00000;
+}
+
+.premio {
+  position: relative;
+  bottom: 50px;
+  margin-left: 15%;
+  text-shadow: 0.5px 0px 50px #faa307;
+}
+
+.desistiu {
+  position: relative;
+  bottom: 50px;
+  margin-left: 25%;
+  text-shadow: 0.5px 0px 50px #a5ffd6;
+}
+
+.vazio {
+  position: relative;
+  bottom: 50px;
+  margin-left: 18%;
+  text-shadow: 0.5px 0px 50px #ffffff;
 }
