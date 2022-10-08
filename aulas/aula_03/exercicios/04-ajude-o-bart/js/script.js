@@ -1,8 +1,8 @@
-const fraseA = ' Não vou mirar na cabeça;';
-const fraseB = ' Eu não vou encorajar o Ralph a voar;';
-const fraseC = ' Não instigarei uma revolução;';
-const fraseD = ' Eu não vou passar sabão nas escadas;';
-const fraseE = ' Explosivos e a escola não se misturam;';
+const fraseA = ' Não vou mirar na cabeça,';
+const fraseB = ' Eu não vou encorajar o Ralph a voar,';
+const fraseC = ' Não instigarei uma revolução,';
+const fraseD = ' Eu não vou passar sabão nas escadas,';
+const fraseE = ' Explosivos e a escola não se misturam,';
 let frases = [fraseA, fraseB, fraseC, fraseD, fraseE];
 
 
