@@ -7,15 +7,16 @@ let frases = [fraseA, fraseB, fraseC, fraseD, fraseE];
 
 
 function sortearFrase() {
-    const sortearFrase1 = parseInt(Math.random() * 5);
+    let sortearFrase1 = parseInt(Math.random() * 5);
     const sortearFrase2 = parseInt(Math.random() * 5);
-    const frase1 = frases[sortearFrase1];
+    let frase1 = frases[sortearFrase1];
     const frase2 = frases[sortearFrase2];
-
+    
     if (frase1 == frase2) {
         sortearFrase1 = parseInt(Math.random() * 5);
-        return;
+        frase1 = frases[sortearFrase1];
     }
+    
 
     const escreverQuadro = document.getElementById('escrita');
     const escrita = frase1 + frase2;
