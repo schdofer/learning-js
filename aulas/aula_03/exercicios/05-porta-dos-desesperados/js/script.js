@@ -29,11 +29,12 @@ function sair() {
 }
 
 function abrirPorta() {
-    const saiu = document.getElementById('resultado');
-    saiu.innerHTML = 'A porta está vazia, tente outra vez!';
-    saiu.classList.add('vazio');
-    saiu.classList.remove('premio');
-    saiu.classList.remove('monstro');
-    saiu.classList.remove('desistiu');
+    let vazia = document.getElementById('resultado');
+    vazia.innerHTML = 'A porta está vazia, tente outra vez!';
+    vazia.classList.add('vazio');
+    vazia.classList.remove('premio');
+    vazia.classList.remove('monstro');
+    vazia.classList.remove('desistiu');
+    // document.getElementById('botaoPorta').disabled = true,
 }
 

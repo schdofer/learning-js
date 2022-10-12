@@ -20,7 +20,7 @@ main {
 
 
 #title {
-  margin-left: 30%;
+  margin-left: 35%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -35,7 +35,7 @@ main {
 section h3 {
   display: flex;
   align-items: center;
-  margin-left: 16%;
+  margin-left: 23%;
   color: #af0208;
   padding: 10px;
   text-align: center;
@@ -44,17 +44,27 @@ section h3 {
   text-shadow: 0px 0px 6px #f1ecec;
 }
 
-#portas {
-  margin-left: 180px;
-  margin-top: 80px;
+#portas1 {
+  margin-left: 500px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  gap: 100px
+  gap: 50px
 }
 
-.portabtn {
+#portas2 {
+  margin-left: 0px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px
+}
+
+.botaoPorta {
   background-color: blueviolet;
   height: 260px;
   width: 250px;
@@ -97,27 +107,31 @@ section h3 {
 .monstro {
   position: relative;
   bottom: 50px;
-  margin-left: 25%;
+  margin-left: 15%;
   text-shadow: 0.5px 0px 50px #d00000;
 }
 
 .premio {
   position: relative;
   bottom: 50px;
-  margin-left: 15%;
+  margin-left: 8%;
   text-shadow: 0.5px 0px 50px #faa307;
 }
 
 .desistiu {
   position: relative;
-  bottom: 50px;
-  margin-left: 25%;
+  bottom: 30px;
+  margin-left: 15%;
   text-shadow: 0.5px 0px 50px #a5ffd6;
 }
 
 .vazio {
   position: relative;
-  bottom: 50px;
-  margin-left: 18%;
+  bottom: 30px;
+  margin-left: 5%;
   text-shadow: 0.5px 0px 50px #ffffff;
+}
+
+.portaFechada{
+  background-color: #d00000;
 }

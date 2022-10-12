@@ -19,7 +19,7 @@ function sortearFrase() {
     
 
     const escreverQuadro = document.getElementById('escrita');
-    const escrita = frase1 + frase2;
+    const escrita = frase1 + frase2 + '<br>';
     let escritaGiz = ''; // string vazia, se colocar um número ou texto vai aparecer no quadro
     //usar let para as variáveis que vão adquirir um novo valor
 
