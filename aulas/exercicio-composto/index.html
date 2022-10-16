@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    
+    <title>Aula 04</title>
+</head>
+<body>
+    <main>
+        <section id="barra_esquerda">
+            <div>
+            <h2 class="texto_e_d">Exercícios:</h2>
+            </div>
+                <div class="texto_barra">
+                    <h3>Exercício 1: IMC</h3>
+                    <h3>Exercício 2</h3>
+                    <h3>Exercício 3</h3>
+                    <h3>Exercício 4</h3>
+                </div>            
+        </section>
+        <section id="barra_direita">
+            <h2 class="texto_e_d">Resolução:</h2>
+            <div id="resposta">
+                <p><h3>Calculadora de IMC</h3></p>
+                <form>
+                    <div class="margem">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="margem">
+                        <label for="peso">Peso</label>
+                        <input type="number" id="peso" name="peso" placeholder="Digite seu peso em Kg">
+                    </div>
+                    <div class="margem">
+                        <label for="altura">Altura</label>
+                        <input type="number" id="altura" name="altura" placeholder="Digite sua altura em metros">
+                    </div>
+                    <div class="margem">
+                        <button type="button" onclick="imc()">Enviar</button>
+                    </div>
+                              
+                </form>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+:root {
+    --bg-default: rgb(255, 255, 255);
+}
+:root {
+    --bg-default1: rgb(203, 194, 194);
+}
+:root {
+    --bg-default2: brown;
+
+}

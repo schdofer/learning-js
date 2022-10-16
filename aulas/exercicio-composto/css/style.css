@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("reset.css");
+@import url("variables.css");
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#barra_esquerda {
+    width: 20%;
+    padding: 50px;
+    background-color: var(--bg-default2);
+    color: rgb(203, 194, 194);
+}
+#barra_direita {
+    width: 80%;
+    padding: 50px;
+    background-color: var(--bg-default1);
+    color: brown;
+}
+#resposta {    
+    max-width: 100%;
+    height: 90%;
+    margin: 0;
+    background-color: var(--bg-default);
+    color: rgb(162, 158, 158);    
+    /* top right botton left */
+    /* top right+left botton */
+    /* top+botton right+left */
+    /* top+botton+right+left */
+}
+
+.margem {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.texto_e_d {
+    font-size: 1.5em;
+    text-align: left;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.texto_barra > h3 {
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+main section p {
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
