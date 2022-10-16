@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Validação de Dados</title>
+</head>
+
+<body>
+    <main>
+        <section id="exercicio">
+            <h2 class="title">Exercício</h2>
+            <h3>Validação de Dados</h3>
+            <p>Você foi contratado para criar um formulário básico de inscrição para um concurso de talentos. Este
+                formulário deve exigir apenas os campos nome, idade e e-mail.</p>
+            <p>Utilize as estruturas para tratamento de erros estudadas e crie uma função para validação dos dados
+                enviados e apresentação dos erros ao usuário, sendo que:</p>
+            <p>1. Nome não pode ser vazio e não pode ser numérico</p>
+            <p>2. Idade não pode ser vazio e deve ser numérico</p>
+            <p>3. E-mail não pode ser vazio e não pode começar com números</p>
+            <p>Caso atendido os requisitos, apresentar a mensagem de cadastro realizado com sucesso e exibir os dados em
+                tela.</p>
+        </section>
+        <section id="resolucao">
+            <h2 class="title">Resolução</h2>
+            <div id="dados">
+                <input type="text" id="nome" placeholder="Digite seu Nome">
+                <input type="text" id="idade" placeholder="Digite sua idade">
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+                <button onclick="enviarDados()">Enviar</button>
+            </div>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+</body>
+
+</html>
