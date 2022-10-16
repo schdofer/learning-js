@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root {
+
+    --bg-default: #fbfbfb;
+}
+
+.dark {
+    --bg-default: black;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" charset="UTF-8" defer></script>
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <main>
+        <section id="enunciado">
+            <h2 class="title">Exercício</h2>
+            <h3>Conversor de Moedas</h3>
+            <p>Pesquise no Google o valor destas 3 moedas:</p>
+            <ul>
+                <li>- Dolar americano(1 dolar = 5.33 reais)</li>
+                <li>- Euro(1 euro = 5.18 reais)</li>
+                <li>- Libra esterlina(1 libra = 5.95 reais)</li>
+            </ul>
+            <p>Peça que o usuário informe um valor em real (a ser convertido).</p>
+            <p>Converta o valor para cada uma das moedas.</p>
+            <p>Formate a exibição de acordo com padrão de cada moeda e apresente o resultado ao usuário.</p>
+            <p>OBS.1: Utilize métodos da Math API para solucionar o caso.</p>
+            <p>OBS.2: Não esqueça de realizar as validações e apresentar os erros ao usuário.</p>
+        </section>
+
+        <section id="resultado">
+            <h2 class="title">Resultado</h2>
+
+
+            <div id="botoes">
+                <input type="text" name="valorReal" id="valorReal"
+                    placeholder="Digite aqui o valor em reais para converter">
+                    <button onclick="converterDolar()">Converter para Dólar</button>
+                    <button onclick="converterEuro()">Converter para Euro</button>
+                    <button onclick="converterLibra()">Converter para Libra esterlina</button>
+            </div>
+
+            <div>
+                <p id="resultadoConvertido"></p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
