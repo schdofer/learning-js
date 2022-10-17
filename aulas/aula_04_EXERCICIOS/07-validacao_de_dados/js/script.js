@@ -6,13 +6,13 @@ function enviarDados() {
     // console.log(idade);
     // console.log(email);
     try {
-        if (nome === '' || Number(nome)) {
+        if (nome === '' || Number(nome)) { //nome é vazio e nome é um número
             throw 'Nome inválido'
         }
-        if (idade === '' || isNaN(idade)) {
+        if (idade === '' || isNaN(idade)) { //idade é vazio e idade "is not a number"
             throw 'Idade é inválido'
         }
-        if (email === '' || Number(email[0])) {
+        if (email === '' || Number(email[0])) { // email vazio e email com a primeira letra com número
             throw 'E-mail é inválido'
         }
         if (nome != Number(nome) && Number(idade) && email != '') {
