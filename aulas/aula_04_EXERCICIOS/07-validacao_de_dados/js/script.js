@@ -6,18 +6,18 @@ function enviarDados() {
     // console.log(idade);
     // console.log(email);
     try {
-        if (nome === '') {
+        if (nome === '' || Number(nome)) {
             throw 'Nome inválido'
         }
         if (idade === '' || isNaN(idade)) {
             throw 'Idade é inválido'
         }
-        if (email === '') {
+        if (email === '' || Number(email[0])) {
             throw 'E-mail é inválido'
         }
-        if (nome = isNaN(nome) && Number(idade) && email != '')
-            resultado.innerHTML = 'Cadastro realizado com sucesso!<br>Nome: ' + nome + '<br>Idade: ' + idade + '<br>E-mail: ' + email; ''
-
+        if (nome != Number(nome) && Number(idade) && email != '') {
+            return resultado.innerHTML = 'Cadastro realizado com sucesso!<br>Nome: ' + nome + '<br>Idade: ' + idade + '<br>E-mail: ' + email; ''
+        }
 
     }
     catch (error) {

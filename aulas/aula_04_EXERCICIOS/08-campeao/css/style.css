@@ -1,6 +1,7 @@
 @charset "UTF-08";
 @import url(reset.css);
 @import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 body {
     background-color: var(--bg-default);
@@ -9,36 +10,67 @@ body {
 }
 
 
-main{
+main {
     display: flex;
     padding: 30px;
 }
 
-main section{
+main section {
     width: 50%;
     padding: 20px;
     text-align: center;
 }
 
-.title{
+.title {
     text-transform: uppercase;
+    padding: 10px;
 }
 
-main section h3{
-    background-color: blueviolet;
+main section h3 {
+    padding: 10px;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.5em;
+    color: #e9ce2c;
 }
 
-main section p{
-    background-color: blue
+main section p {
+    padding: 5px;
+    text-align: justify;
+    color: #5e9288;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     width: 50%;
-   background-color: aqua;
+    position: relative;
+    left: 25%;
+    padding: 15px;
 }
 
-button{
-    background-color: brown;
+input {
+    border-radius: 15px;
+    background-color: #fce0626b;
+}
+
+label {
+    color: #5e9288;
+}
+
+button {
+    position: relative;
+    top: 15px;
+    border-radius: 15px;
+    width: 150px;
+    color: #bf211e;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border-color: #bf211e;
+}
+
+button:hover {
+    color: #f3f3f3;
+    background-color: #bf211e;
+    border-color: #f3f3f3;
+    ;
 }
