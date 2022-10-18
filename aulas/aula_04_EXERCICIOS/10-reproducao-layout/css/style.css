@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+nav{
+    display: flex;
+    background-color:#6331a4;
+    width: auto;
+    height: 8vh;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.sistema{
+    color: #fff3ff;
+font-size: 2.5em;
+margin-left: 20px;
+}
+
+.flex-item{
+  display: flex;
+  align-items: center;
+ gap: 20px;
+ margin: auto;
+}
+
+.pages{
+    color: #fff3ff;
+  font-size: 1.5em;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+main{
+    background-color:#f3f3f3;
+    padding: 20px;
+    margin: 40px 50px;
+    height: 85%;
+}
+
+.corpo{
+    padding: 50px;
+    width: 80%;
+    height: 80%;
+    pad: 20px;
+}
+
+.home{
+    font-size: 2.0em;
+    text-decoration: underline;
+}
