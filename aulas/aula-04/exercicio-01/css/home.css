@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url('variable.css');
+@import url('reset.css');
+
+section {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
