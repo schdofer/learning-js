@@ -6,7 +6,7 @@ function enviarDados() {
     // console.log(idade);
     // console.log(email);
     try {
-        if (nome === '' || Number(nome)) { //nome é vazio e nome é um número
+        if (nome === '' || Number(nome[0])) { //nome é vazio e nome é um número
             throw 'Nome inválido'
         }
         if (idade === '' || isNaN(idade)) { //idade é vazio e idade "is not a number"

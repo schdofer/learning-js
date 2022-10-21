@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #7ccdf4;
+}
+
+main {
+    display: flex;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    padding: 15px;
+    color: #23233b;
+    font-size: 3.5em;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+    color: #2c4268;
+    font-size: 3.0em;
+}
+
+#exercicio p {
+    text-align: center;
+    padding: 5px;
+    color: #23233b;
+    font-size: 1.2em;
+
+
+}
+
+#email {
+    background-color: #ebebeb;
+    border: 2px solid #007bba;
+    color: #23233b;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.imagem {
+    width: 70px;
+    height: 70px;
+}
+
+label {
+    color: #23233b;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+input {
+    color: #23233b;
+    font-size: 1.2em;
+    padding: 4px 12px;
+}
+
+button {
+    background-color: #007bba;
+    border: 2px solid #23233b;
+    color: #23233b;
+    padding: 4px 12px;
+    box-shadow: 2px 3px 5px #d9dcd6;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #23233b;
+    border: 2px solid #007bba;
+    color: #7bd2fd;
+    box-shadow: 2px 3px 5px #9da09a;
+}
+
+button:active {
+    position: relative;
+    top: 5px;
+}
+
+#resultado {
+    text-align: center;
+    color: #23233b;
+    font-size: 1.4em;
+}
+
+mark {
+    background-color: #ff6392;
+    color: #f9f9f9;
+}

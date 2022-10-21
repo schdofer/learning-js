@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTTF-8" defer></script>
+    <title>Porteiro da Balada</title>
+</head>
+
+<body>
+    <main>
+        <section id="exercicio">
+            <h2 class="title">Exercício</h2>
+            <h3>Porteiro da Balada</h3>
+            <p>Escreva um programa que simule um porteiro de balada para maiores de idade (18+).</p>
+            <p>Você deve solicitar o nome e a data de nascimento de uma pessoa, verificar se ela pode entrar na festa e
+                apresentar o resultado.</p>
+            <p></p>
+        </section>
+        <section id="resolucao">
+            <h2 class="title">Resolução</h2>
+            <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+          <br>
+          <label for="nascimento">Data de Nascimento</label>
+          <input type="date" name="nascimento" id="nascimento">
+          <br><br>
+          <button onclick="verificarIdade()">Verificar a idade</button>
+          <br><br>
+          <p id="resultado"></p>
+        </section>
+    </main>
+</body>
+
+</html>
