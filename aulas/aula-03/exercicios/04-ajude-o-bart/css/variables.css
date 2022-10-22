@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
 :root{
-    --bg-default: #f4f4f4;
+    --bg-default: #f4f4f4;    
+}
+
+ligth-theme{
+    --ligth-theme: white;
+}
+
+black-theme{
+     --black-theme: black;
+}
+
+tamanho-frase{
+    --frase-tamanho: 18em;       
 }

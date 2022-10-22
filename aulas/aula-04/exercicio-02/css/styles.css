@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url('variaveis.css');
+@import url('reset.css');
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#menu{
+    height: 100%;
+    width: 180px;
+    background-color: blueviolet;
+    margin: 10px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+#menu div{
+    margin-bottom: 70%;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    margin: 10px;
+}
+
+ul li{
+    margin-bottom: 15%;
+    font-weight: bold;    
+}

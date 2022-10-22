@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.JS" charset="UTF-8" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Ajude o barth</title>
 </head>
 <body>
     <main>
-        <section id="enunciado">
-            <h2 class="title">Ajude o Bart</h2>
-
+        <section class="enunciado">
+            <h2 class="title">EXERCICIO</h2>
+            <h3>Ajude o Bart</h3>
             <p>
                 Bart Simpson frequentemente apronta na escole e precisa escrever repetidas frases no quadro.
                 Desta vez ele precisa escrever intercaladamente as seguintes frases até encher o quadro.
@@ -19,19 +20,36 @@
             <p>
                 Pergunte ao Bart quais as 2 frases que ele precisa escrever, por exemplo:
                 <ol>
-                    <li>1) Não andarei de skate no corredor da escola</li>
-                    <li>2) Eu não vou encorajar o Ralph a voar</li>
-               
-                
+                    <li>Não andarei de skate no corredor da escola</li>
+                    <li>Eu não vou encorajar o Ralph a voar</li>
                </ol>
             </p>            
             <p> Sabendo que para encher o quadro é preciso escrever cada uma das frases 25 vezes, ajude o Bart a concluir esta tarefa.</p>
         </section>
 
-        <section id="resolucao">
+        <section class="enunciado">
+            <h2 class="title">SOLUÇÃO</h2>
+            <h3>Bart escreva 2 frases</h3>
+            <div id="frases">
+               <label for="Frase1"> Frase 1</label><br>
+               <input class="notas" type="text" name="frase1" id="frase1">
+            </div>
+            <div id="frases">
+               <label for="Frase2"> Frase 2</label><br>
+               <input class="notas" type="text" name="frase2" id="frase2">
+            </div>
+            <div id="botao">
+                <button onclick="escrever()">Escrever no Quadro</button>
+            </div>
+            <div id="retorno"></div>
+         </section>
+         <section id="quadro">              
+              <div id="metade1">
+              </div>    
+              <div id="metade2">
+            </div>    
 
-        </section>
+         </section>
     </main>
-    
 </body>
 </html>
