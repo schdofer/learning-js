@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Exercicio XIII</title>
+</head>
+<body onload="campos_default()">
+     <main>
+        <section id="id-section">
+            <h2>EXERCICIO</h2>
+            <h3>Porteiro da balada</h3>  
+
+           <p>
+              Escreva um programa que simule um porteiro de balada para maiores de idade (18+). 
+           </p> 
+           <p>
+              Você deve solicitar o nome e a data de nascimento de uma pessoa, 
+              verificar se ela pode entrar na festa e apresentar o resultado.
+           </p>
+           <p id="observacao">
+              OBS.: Embora exista um objeto para trabalhar com datas no Javascript, 
+              ainda não estudamos. Por hora resolva este problema utilizando os tipos 
+              primitivos estudados.
+           </p>
+        </section>
+
+        <section id="id-section">
+             <h2>RESOLUÇÃO</h2>
+             <div id="resolucao">
+                <label for="nome">Nome</label><br>
+                <input onkeypress="tecla(event)"   class="input-nome" type="text" id="fnome" name="fnome" placeholder="Digite o nome"><br>
+
+                <label for="idade">Idade</label><br>
+                <input class="input-idade" type="date" name="fidade" id="fidade"><br>
+
+                <button onclick="coloca_lista()">Cadastrar</button>
+            </div>
+        </section>
+
+        <section id="lista-festa">
+            <h2>Lista Presença</h2>
+            <div id="lista-nome">
+                <h2>Nome</h2>
+                <div id="nome-lista">                    
+                </div>
+            </div>
+
+            <div id="lista-idade">
+                <h2>Idade</h2>
+                <div id="idade-lista">
+                </div>
+
+            </div>
+        </section>
+     </main>    
+</body>
+</html>

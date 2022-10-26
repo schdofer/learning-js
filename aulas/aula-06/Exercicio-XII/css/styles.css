@@ -42,6 +42,8 @@ main section input{
     border-radius: 10px;
     border: none;
     background-color: aqua;
+    cursor: pointer;
+    padding: 5px;
     
 }
 
