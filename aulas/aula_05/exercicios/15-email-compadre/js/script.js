@@ -3,10 +3,10 @@ function destacarTchan() {
     let texto = document.getElementById('palavra').value;
 
     try {
-        if (texto === '' || Number(texto)) {
+        if (!texto || parseInt(texto)) {
             throw 'Digite uma palavra válida';
         }
-        if (texto !== '') {
+        if (texto) {
             let novoEmail = email.replaceAll(texto, '<mark>' + texto + '</mark>');
             resultado.innerHTML = novoEmail;
 

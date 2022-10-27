@@ -6,17 +6,17 @@ function verificarIdade() {
     let idade = anoAtual - ano[0];
 
     try {
-        if (nome === '' || Number(nome) || nascimento === '') {
+        if (!nome || parseInt(nome) || !nascimento) {
             throw  'Dados inválidos';
         }
-        if (isNaN(nome) || Number(nascimento)) {
+        if (nome || nascimento) {
             if (idade >= 18) {
-                return resultado.innerHTML = ` ${nome} você tem mais de 18 anos, pode entrar na festa!
+                return resultado.innerHTML = ` ${nome} você tem ${idade} anos, é maior de idade, pode entrar na festa!
             `;
             } else {
-                return resultado.innerHTML = ` ${nome} você tem ${idade} anos, você é menor de idade, não poderá entrar na festa!
-                <br>
-                <img src="https://img.icons8.com/emoji/256/no-one-under-eighteen-emoji.png" alt="placa de menor de idade">`;
+                return resultado.innerHTML = `${nome} você tem ${idade} anos, você é menor de idade, não poderá entrar na festa!
+                <img src="https://img.icons8.com/emoji/256/no-one-under-eighteen-emoji.png" alt="placa de menor de idade" id="placa">
+               `;
             }
         }
     }

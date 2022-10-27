@@ -30,12 +30,12 @@ main section {
 h3 {
     text-align: center;
     padding: 15px;
-    font-size: 2.5em;
+    font-size: 3.0em;
     font-family: var(--font-family);
     color: #81c3d7;
 }
 
-#exercicio p {
+p {
     text-align: center;
     padding: 5px;
     margin: auto;
@@ -82,9 +82,16 @@ button:active{
 }
 
 #resultado{
-    position: relative;
+display: flex;
+flex-direction: column;
     text-align: center;
     color: #81c3d7;
     font-size: 1.8em;
     font-weight: bolder; 
+    align-items: center;
+}
+
+#placa{
+    width: 200px;
+    height: 200px;
 }

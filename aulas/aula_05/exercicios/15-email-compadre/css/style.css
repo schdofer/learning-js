@@ -3,6 +3,7 @@
 @import url(reset.css);
 
 body {
+    font-family: var(--font-family);
     width: 100%;
     height: 100vh;
     background-color: #7ccdf4;
@@ -49,6 +50,7 @@ h3 {
     color: #23233b;
     margin: auto;
     font-size: 1.2em;
+    
 }
 
 .imagem {

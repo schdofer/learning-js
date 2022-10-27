@@ -24,16 +24,3 @@ function enviarDados() {
         document.getElementById('nota').value = '';
     }
 }
-
-
-function ganhador(){
-   let maiorNumero = console.log(Math.max.apply(null, nota))
-   for (let i = 0; i< nota.length; i++){
-    if (maiorNumero === nota[i]){
-console.log(nota[index])
-    }
-   }
-
-
-
-}

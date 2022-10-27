@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Protocolo de Atendimento</title>
+</head>
+<body>
+    <main>
+        <secttion id="exercicio">
+            <h2 class="title">EXERCÍCIO</h2>
+            <h3>Protocolo de atendimento</h3>
+            <p>Você foi contratado para criar uma função que gera protocolos de atendimento para uma empresa de callcenter.<br>
+                Estes protocolos não podem se repetir e devem ter o seguinte padrão pré estabelecido:<br>
+                XXXXX-XX-XX, sendo que:
+            </p>
+            <p>1) Os primeiros 5 dígitos devem ser um valor sequencial único (ter obrigatoriamente 5 dígitos)</p>
+            <p>2) Os primeiros 2 dígitos após o primeiro hífen devem referenciar ao ano corrente</p>
+            <p>3) Os últimos 2 dígitos são dígitos verificadores, sendo que:<br><br>
+a) O primeiro dígito verificador corresponde a soma dos 5 primeiros dígitos<br>
+i)Se maior que 9, então deverá manter 9, caso contrário manter o próprio número<br><br>
+b)O segundo dígito deve ser: <br>
+i)Igual a 1 caso o anterior seja entre 0 e 4 <br>
+ii)Igual a 2 caso o anterior seja entre 5 e 9 <br>
+</p>
+        </secttion>
+        <section id="resolucao">
+            <h2 class="title">RESOLUÇÃO</h2>
+            <button onclick="gerarProtocolo()">Gerar Protocolo</button>
+            <br><br>
+            <p id="resultado">teste</p>
+        </section>
+    </main>
+    
+</body>
+</html>

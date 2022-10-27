@@ -2,14 +2,14 @@
 function converterDolar() {
     let valorReal = document.getElementById('valorReal').value;
     try {
-        if (valorReal === '') { //caso o valor não seja digitado
+        if (!valorReal) { //caso o valor não seja digitado
             throw new Error('O valor está em branco!'); // throw permite que "lance" um erro personalizado
             // o new Error vai apresentar a mensagem de Error antes do texto
         }
         if (isNaN(valorReal)) {// caso o valor seja diferente de um número
             throw 'Digite um número válido!';
         }
-        if (valorReal = Number(valorReal)) { //caso o valor digitado seja um número válido
+        if (valorReal) { //caso o valor digitado seja um número válido
             let dolar = valorReal / 5.33;
             resultadoConvertido.innerHTML = (valorReal).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + ' convertido(s) para dólar:<br>' + (dolar).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         }
