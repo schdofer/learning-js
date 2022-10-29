@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Comparar case-insensitive</title>
+</head>
+
+<body>
+    <main>
+        <section id="exercicio">
+            <h1 class="title">Exercício</h1>
+            <h3>Comparador case-insensitive</h3>
+            <p>Escreva um programa que receba 2 textos digitados e compare eles informando se são equivalentes ou não.
+            </p>
+            <p>Detalhe: este seu comparador deve ser case-insensitive e não considerar acentos, por exemplo:<br><br>
+                1. “mar” deve ser considerado igual a “MAR” ou “Mar” ou “mAr”, etc.<br><br>
+                2. “táxi” deve ser considerado igual a “taxi” ou “TÁXI” ou “TaXi” ou “tÁxi”, etc. </p>
+
+
+
+        </section>
+        <section id="resolucao">
+            <h1 class="title">Resolução</h1>
+            <br>
+            <br>
+            <input type="text" id="texto1" placeholder="Digite o primeiro texto">
+            <br>
+            <br>
+            <input type="text" id="texto2" placeholder="Digite o segundo texto">
+            <br>
+            <br>
+            <button onclick="compararTexto()">Comparar Texto</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+</body>
+
+</html>

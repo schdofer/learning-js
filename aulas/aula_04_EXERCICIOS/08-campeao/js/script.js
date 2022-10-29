@@ -1,10 +1,8 @@
-let nome = [];
-let nota = [];
 
 function enviarDados() {
     let nomeDigitado = document.getElementById('nome').value;
     let notaDigitada = document.getElementById('nota').value;
-
+   
     try {
         if (Number(nomeDigitado) || nomeDigitado === '') {
             throw 'Nome é inválido'
@@ -12,15 +10,13 @@ function enviarDados() {
             throw 'Nota é inválido'
         }
         if (isNaN(nomeDigitado) && Number(notaDigitada)) {
-            for (let i = 0; i <= nome.length && i <= nota.length; i++)
-            nome.push(nomeDigitado);
-            nota.push(notaDigitada);
+            
         }
-    } catch (error) {
-        resultado.innerHTML = error;
-    }
-    finally {
-        document.getElementById('nome').value = '';
-        document.getElementById('nota').value = '';
-    }
+} catch (error) {
+    resultado.innerHTML = error;
+}
+finally {
+    document.getElementById('nome').value = '';
+    document.getElementById('nota').value = '';
+}
 }

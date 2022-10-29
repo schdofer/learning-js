@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff0f3;
+    color: #590d22;
+}
+
+main {
+    display: flex;
+
+}
+
+section {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 3.5em;
+
+}
+
+h3 {
+    padding: 10px;
+    font-size: 4em;
+    font-family: var(--font-family);
+    color: #c9184a;
+    text-shadow: 1px 2px 4px #590d22;
+    text-transform: uppercase;
+}
+
+#exercicio p {
+    text-align: justify;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+input {
+    padding: 10px 50px;
+    border: solid 2px #590d22;
+}
+input:hover{
+    background-color: #ff8fa3;
+}
+
+::placeholder {
+    color: #a4133c;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffccd5;
+    border: solid 2px #590d22;
+    border-radius: 5px;
+    color: #590d22;
+    box-shadow: 1px 1px 2px #c9184a;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#590d22;
+    color: #fff0f3;
+    box-shadow: 1px 1px 2px #800f2f;
+    border: solid 2px #ffccd5;
+}
+
+button:active{
+    position: relative;
+    top: 5px
+}
+
+#resultado {
+    padding: 20px;
+    font-size: 1.5em;
+}
