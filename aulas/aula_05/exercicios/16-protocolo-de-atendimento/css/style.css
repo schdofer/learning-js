@@ -2,12 +2,14 @@
 @import url(variables.css);
 @import url(reset.css);
 
-body{
+body {
     width: 100%;
     height: 100vh;
+    font-family: var(--font-family);
+    background-color: #ffedd8;
 }
 
-main{
+main {
     display: flex;
 }
 
@@ -18,19 +20,52 @@ main section {
     align-items: center;
 }
 
-.title{
+.title {
     text-align: center;
     padding: 15px;
+    font-size: 3.0em;
+    color: #583101;
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: var(--font-family);
     padding: 15px;
+    font-family: var(--font-enunciado);
+    font-size: 4.5em;
+    color: #f96f5d;
+    text-shadow: 1px 3px 2px #583101;
 }
 
-#exercicio p{
-    color: brown;
+#exercicio p {
+    color: #8b5e34;
     margin-left: 50px;
     padding: 10px;
+}
+
+button {
+    background-color: #f96f5dae;
+    color: #603808;
+    padding: 5px 10px;
+    font-size: 1.0em;
+    border: solid 2px #f96f5d;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+    border: solid 2px red;
+    box-shadow: 2px 2px 4px gray;
+}
+
+button:active {
+    position: relative;
+    top: 5px
+}
+
+#resultado {
+    font-size: 3.5em;
+    color: #603808;
 }

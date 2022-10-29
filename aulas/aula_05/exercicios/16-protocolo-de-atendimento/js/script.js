@@ -1,8 +1,32 @@
-function gerarProtocolo(){
-    // let protocoloTeste = abcde-fg-hi
-    //primeiros 5 digitos valor sequencial unico
-    // 2 digitos após o hifen = ano = 22
-    // h é a soma dos 5 primeiros digitos sendo que se maior que 9 ficará igual a 9
-    // i = 1 se h estiver entre 0 e 4 ou i = 2 caso h esteja entre 5 e 9
-   
+let digitoInicial = 0;
+const ano = 22;
+let ultimoDigito = 0;
+
+
+function gerarProtocolo() {
+    digitoInicial++;
+    let cincoDigitos = digitoInicial.toString().padStart(5, "0");
+    //toString(): Para converter o número em uma string;
+    // padStart(): para preencher o número convertido em string com os zeros;
+    formarUltimosDigitos(cincoDigitos);
+
+}
+
+function formarUltimosDigitos(string) {
+    let array = string.split(''); //transformei os cinco digitos numa array de string;
+    let numberArray = array.map(Number); // converti a array de string em números;
+    let soma = 0;
+    for (let i = 0; i < numberArray.length; i++) {
+        soma += numberArray[i];
+        if (soma >= 9) soma = 9;
+    }
+
+    if (0 <= soma && soma <= 4) {
+        ultimoDigito = 1;
+    } else if (5 <= soma && soma <= 9) {
+        ultimoDigito = 2;
+    }
+
+    resultado.innerHTML = string + "-" + ano + "-" + soma + ultimoDigito;
+
 }

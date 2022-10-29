@@ -9,7 +9,7 @@ function verificarIdade() {
         if (!nome || parseInt(nome) || !nascimento) {
             throw  'Dados inválidos';
         }
-        if (nome || nascimento) {
+        if (nome && nascimento) {
             if (idade >= 18) {
                 return resultado.innerHTML = ` ${nome} você tem ${idade} anos, é maior de idade, pode entrar na festa!
             `;
