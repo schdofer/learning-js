@@ -9,10 +9,10 @@ function compararTexto() {
     try {
         if (!texto1 && !texto2) throw `Digite um texto válido`
 
-        if (comparacao === 0) return resultado.innerHTML = ` "${texto1}" é equivalente à "${texto2}"`;
+        if (comparacao === 0) return resultado.innerHTML = ` "${texto1}" <strong style = color:#4895ef;> é equivalente à </strong> "${texto2}"`;
         //para trocar a cor do texto equivalente ?
 
-        else return resultado.innerHTML = ` "${texto1}" não é equivalente à "${texto2}" `;
+        else return resultado.innerHTML = ` "${texto1}" <strong style = color:#bf0603;> não é equivalente à </strong> "${texto2}" `;
 
     }
     catch (error) {
