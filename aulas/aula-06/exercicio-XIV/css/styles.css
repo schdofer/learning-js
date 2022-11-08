@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('variaveis.css');
+@import url('reset.css');
+
+main{
+    width: 100%;
+    display: flex;
+    font-family: var(--font-default);    
+}
+
+main section{
+    width: 48%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+    text-align: center;    
+    padding: 20px;
+    margin: 1%;
+}
+
+main section h2{
+    color: blueviolet;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+
+main section h3{
+    margin-bottom: 3%;
+}
+
+main section label{
+    font-weight: bold;
+}
+
+main section input{
+     width: 90%;
+     height: 30px;
+     border-radius: 10px;
+     border-style: none;
+     background-color: aqua;
+     margin-bottom: 30px;
+     cursor: pointer;
+     padding-left: 10px;
+}
+
+main section button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: dimgrey;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main section button:hover{
+    background-color: wheat;
+    color: black;
+}
+
+
+
+

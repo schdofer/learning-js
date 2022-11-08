@@ -35,7 +35,7 @@
                 <input onkeypress="tecla(event)"   class="input-nome" type="text" id="fnome" name="fnome" placeholder="Digite o nome"><br>
 
                 <label for="idade">Idade</label><br>
-                <input class="input-idade" type="date" name="fidade" id="fidade"><br>
+                <input class="input-idade" type="date" name="fidade" id="fidade" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"><br>
 
                 <button onclick="coloca_lista()">Cadastrar</button>
             </div>
