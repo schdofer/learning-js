@@ -10,18 +10,22 @@
 </head>
 <body>
     <main>
-    <section id="cadastro">
+        <section id="cadastro">
+        <h1>Cadastros</h1>
+        <br>
         <div class="inputs">
-            <input type="text">
+            <input type="text" placeholder="Nome" id="nome">
             <br> <br>
-            <input type="text">
+            <input type="text" placeholder="CPF" id="cpf">
             <br> <br>
-            <input type="text">
+            <input type="text" placeholder="Idade" id="idade">
             <br> <br>
-            <input type="text">
+            <input type="text" placeholder="E-mail" id="email">
             <br> <br>
-            <input type="text">
+            <input type="text" placeholder="Telefone" id="telefone">
         </div>
+        <button onclick="realizarCadastro()">Realizar Cadastro</button>
+        <p id="mensagem"></p>
     </section>
 <section id="filtro">
     <p id="resultadoFiltro">TESTE</p>
