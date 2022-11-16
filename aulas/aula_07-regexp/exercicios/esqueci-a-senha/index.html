@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+</head>
+
+<body>
+    <main>
+    <section id="exercicio">
+        <h1>Exercício</h1>
+        <h2>Esqueci minha senha</h2>
+        <p>Crie uma página no estilo “esqueci minha senha”.</p>
+        <p>Nesta página o usuário deverá digitar uma nova senha 2x.</p>
+        <p>Seu sistema deve garantir que as senhas digitadas são iguais e que tenham complexidade ativada.</p>
+        <p>O padrão de complexidade necessária segue a regra abaixo:</p>
+<ol>
+    <li>Deve conter pelo menos um dígito numérico</li>
+    <li>Deve contar pelo menos uma letra minúscula</li>
+    <li> Deve conter pelo menos uma letra maiúscula</li>
+    <li>Deve conter pelo menos um simbolo especial entre: $_.!#%&*()[]{}^~</li>
+    <li>  Deve conter no mínimo 8 caracteres</li>
+</ol>
+   
+    </section>
+
+    <section id="resultado">
+        <h1>Resultado</h1>
+        <label for="Digite CPF"></label>
+        <input type="text" id="cpf" placeholder="***.***.***-**">
+        <label for="Digite E-mail"></label>
+        <input type="text" id="email">
+        <button onclick="cadastrarCpf()">Cadastrar</button>
+        <p id="resultado"></p>
+    </section>
+</main>
+</body>
+
+</html>

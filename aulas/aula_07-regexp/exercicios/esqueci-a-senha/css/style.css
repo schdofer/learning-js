@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    display: flex;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
