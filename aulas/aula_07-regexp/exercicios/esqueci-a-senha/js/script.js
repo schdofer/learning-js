@@ -4,8 +4,7 @@ function cadastrarCpf(){
     const cpf = document.getElementById('cpf').value;
     const email = document.getElementById('email').value;
     const substituiCpf = cpf.replace(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/, '***.***.***-**');
-    const substituiEmail = email.replace(/^.+@\w+(\.\w{2,3}){1,2}$/, 'seu email')
-    // const substituiEmail = email.replace(/(.+)@(\w+)(\.\w{2,4})+/, 'seu email')
+    const substituiEmail = email.replace(/^(\w_+)@\w+(\.\w{2,3}){1,2}$/, 'seu email')
 
     console.log(substituiEmail)
 }
