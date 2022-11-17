@@ -8,7 +8,7 @@
 function testar(){
     const teste = document.getElementById('teste').value;
     
-    let regExp = /^([$_\.!#%&\*()[\]{}\^~]+)([a-z]+)([A-Z]+)([0-9]+)$/.test(teste)
+    let regExp = /^([[$_\.!#%&\*()[\]{}\^~]+)([a-z]+)([A-Z]+)([0-9]+)]{8,}$/.test(teste)
     
     console.log(regExp);
 }
