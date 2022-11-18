@@ -9,7 +9,7 @@ let email3 = "natyksgmail.com";
 
 //let testEmail = /^\w+@gmail.com$/; -> vai validar a primeira parte, antes do @
 
-let testEmail = /^\w+@\w+(\.\w{2,3}){1,2}$/;
+let testEmail = /^(\w)+@\w+(\.\w{2,3}){1,2}$/;
             //natyks@gmail.com(.br se precisar).
             //Cria um grupo envolvendo entre parenteses. Aqui tem-se um grupo de caracteres e metacaracteres
             //Depois é colocado um quantificador no para o grupo (para caso precise ter o .br)

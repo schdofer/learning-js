@@ -15,3 +15,14 @@ main section{
     width: 50%;
     align-items: center;
 }
+
+table{
+    border: 1px solid black;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
+}

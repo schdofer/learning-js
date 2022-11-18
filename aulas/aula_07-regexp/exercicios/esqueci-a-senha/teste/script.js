@@ -5,10 +5,11 @@
 // Deve conter pelo menos um simbolo especial entre: $_.!#%&*()[]{}^~
 // Deve conter no mínimo 8 caracteres
 
-function testar(){
+function testar() {
     const teste = document.getElementById('teste').value;
-    
-    let regExp = /^([[$_\.!#%&\*()[\]{}\^~]+)([a-z]+)([A-Z]+)([0-9]+)]{8,}$/.test(teste)
-    
+
+    let regExp = /([$_\.!#%&\*()[\]{}\^~]+)([a-z]+)([A-Z]+)([0-9]+)/.test(teste)
+
+    //let regExp = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[$_\.!#%&\*()[\]{}\^~])[0-9a-zA-Z$_\.!#%&\*()[\]{}\^~]{8,}$/.test(teste)
     console.log(regExp);
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar Dados Pessoais</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+</head>
+
+<body>
+    <main>
+    <section id="exercicio">
+        <h1>Exercício</h1>
+        <h2>Ocultar Dados Pessoais</h2>
+        <p>Você foi contratado para criar um programa que leia um texto contendo uma mensagem de boas vindas e uma lista de 20 classificados em um concurso. Esta lista tem nome, e-mail, cpf e data de nascimento..</p>
+        <p>Seu programa deve ler o texto, pesquisar por padrões de extração utilizando RegExp e ocultar os dados de E-Mail e CPF antes de apresentá-los na tela, garantindo assim requisitos da LGPD.</p>
+        <p>Texto para exemplo:</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquam, doloribus perferendis provident delectus harum excepturi libero aliquid corrupti facilis nemo neque ipsum consequatur. Maiores similique nisi corrupti corporis beatae?</p>
+        <table>
+<tr>
+    <td>Nome</td>
+    <td>E-mail</td>
+    <td>CPF</td>
+    <td>Data de Nascimento</td>
+</tr>
+<tr>
+    <td>Luiz Otávio Melo</td>
+    <td>luiz.melo@gmail.com</td>
+    <td>132.465.798-85</td>
+    <td>25/04/1999</td>
+</tr>
+<tr>
+    <td>Ana Luiza Moraes</td>
+    <td>analu-moraes@yahoo.com.br</td>
+    <td>456.588.875-85</td>
+    <td>12/06/2000</td>
+</tr>
+<tr>
+    <td>Marcelo Azevedo</td>
+    <td>marcelo_azevedo@hotmail.com</td>
+    <td>456.123.258-89</td>
+    <td>26/10/1999</td>
+</tr>
+
+        </table>
+    </section>
+
+    <section id="resultado">
+        <h1>Resultado</h1>
+        <textarea name="texto" id="texto" cols="60" rows="20" placeholder="Seu texto aqui"></textarea>
+        <br>
+        <button onclick="cadastrarCpf()">Cadastrar</button>
+        <br><br>
+        <p id="imprimeTexto"></p>
+    </section>
+</main>
+</body>
+
+</html>
