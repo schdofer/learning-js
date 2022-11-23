@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <script src="./script.js"></script>
     <title>Teste</title>
 </head>
+
 <body>
-    <input id="senha1" type="password">
-    <br><br>
-    <input id="senha2" type="password">
-    <br><br>
-    <button onclick="testarRegex()">teste</button>
-    <p id="resultado"></p>
+    <main>
+        <div id="quadro-de-senha">
+            <h3>Recuperar a senha</h3>
+            <p>Digite sua nova senha </p>
+            <label for="senha1">Nova senha</label><br>
+            <input id="senha1" type="password">
+            <br><br>
+            <label for="senha2">Repita sua nova senha</label><br>
+            <input id="senha2" type="password">
+            <br><br>
+            <button onclick="cadastrarSenha()">Cadastrar Nova Senha</button>
+            <h5>Sua senha deve ter
+                <ul>
+                    <li>No mínimo um dígito numérico</li>
+                    <li>No mínimo uma letra minúscula</li>
+                    <li>No mínimo uma letra maiúscula</li>
+                    <li>No mínimo um simbolo especial entre: $_.!#%&*()[]{}^~</li>
+                    <li>No mínimo 8 caracteres</li>
+                    <p id="resultado"></p>
+                </ul>
+            </h5>
+        </div>
+    </main>
 </body>
+
 </html>

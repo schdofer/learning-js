@@ -6,30 +6,32 @@
 // Deve conter no mínimo 8 caracteres
 
 
-function testarRegex() {
+function cadastrarSenha() {
     let senha1 = document.getElementById('senha1').value;
-let senha2 = document.getElementById('senha2').value;
-let regExp = /^(?=.*[$_\.!#%&\*()[\]{}\^~])(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$_\.!#%&\*()[\]{}\^~])[0-9a-zA-Z$_\.!#%&\*()[\]{}\^~]{8,}$/
-if (senha1===senha2){
-    try {
-        if (senha1 === regExp) {
-            return resultado.innerHTML = `nova senha cadastrada com sucesso`
+    let senha2 = document.getElementById('senha2').value;
+    let regExp = /^(?=.*[$_\.!#%&\*()[\]{}\^~])(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$_\.!#%&\*()[\]{}\^~])[0-9a-zA-Z$_\.!#%&\*()[\]{}\^~]{8,}$/
+    let confereSenha = regExp.test(senha1, senha2)
+    console.log(confereSenha)
+    if (senha1 === senha2) {
+        try {
+            if (confereSenha === true) {
+                return resultado.innerHTML = `nova senha cadastrada com sucesso`
+            }
+            else if (confereSenha  === false) {
+                throw resultado.ineerHTML = `Senha fraca`
+            }
         }
-        else if (senha1 != regExp) {
-            throw resultado.ineerHTML = `Senha fraca`
+        catch (error) {
+            resultado.innerHTML = error;
+        }
+        finally {
+            document.getElementById('senha1').value = ''
+            document.getElementById('senha2').value = ''
         }
     }
-    catch (error) {
-        resultado.innerHTML = error;
+    else {
+        resultado.innerHTML = `As senhas são diferentes`
     }
-    finally {
-        document.getElementById('senha1').value = ''
-        document.getElementById('senha2').value = ''
-    }
-}
-else {
-    resultado.innerHTML = `As senhas são diferentes`
-}
 }
 
 
