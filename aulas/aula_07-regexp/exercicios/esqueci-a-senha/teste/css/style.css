@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url(variables.css);
+@import url(reset.css);
+
+body {
+    background-image: linear-gradient(to right, #DBE6F6, #C5796D);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    font-size: 25px;
+}
+
+#quadro-de-senha {
+    background-color: #fbfaffb1;
+    position: relative;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+    text-align: center;
+    border-top: 10px solid #602437;
+    box-shadow: 4px 4px 10px #522e38;
+    border-radius: 7px;
+
+}
+
+h3 {
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+input {
+    background-color: #fbfaff87;
+    padding: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #d0b0b3;
+    color: #602437;
+    font-size: 0.7  em;
+    cursor: pointer;
+    border: 1px solid #602437;
+    box-shadow: 2px 4px 4px #522e38;
+}
+
+button:active {
+    position: relative;
+    top: 5px;
+}
+
+button:hover {
+    background-color: #602437;
+    color: #d0b0b3;
+    border: 1px solid #602437;
+}
+
+ul{
+    text-align: center;
+padding: 15px;
+}
+span{
+    font-size: 1.1em;
+    color: #602437;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    font-size: 0.7em;
+
+}
