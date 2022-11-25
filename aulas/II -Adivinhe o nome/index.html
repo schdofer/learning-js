@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Exercício II</title>
+</head>
+<body>
+    <main>
+        <section id="exercicio">
+            <div>
+                <h2>EXERCÍCIO</h2>
+                <h3>Adivinhe o nome</h3>
+                <p>
+                    Exiba uma mensagem de boas vindas ao usuário e informe uma lista de 10 nomes.
+                    Dentre estes nomes, um você já terá com selecionado em seu sistema.
+                </p>
+                <p>
+                    Peça que o usuário adivinhe qual o nome escolhido, escolhendo uma das opções.
+                </p>
+                <p>
+                    Caso ele escolha o nome correto, exiba a mensagem: 
+                    “Parabéns, você venceu! Escolheu o nome correto.”
+                </p>
+                <p>
+                    Caso ele escolha o nome incorreto, exiba a mensagem:
+                    “Tente novamente mais tarde.”
+                </p>
+            </div>
+
+        </section>
+
+        <section id="resolucao">
+            <h2>RESOLUÇÃO</h2>
+            <h3>NOMES</h3>
+     
+            <div id="nome_geral">
+                <div id="selecao">
+                   <input type="radio" id="nome1" name="nome" value=0>
+                   <label for="nome1">Tiago</label><br>
+                   <input type="radio" id="nome2" name="nome" value=1>
+                   <label for="nome2">Fernando</label><br>
+                   <input type="radio" id="nome3" name="nome" value=2>
+                   <label for="nome3">Naty</label><br>
+                   <input type="radio" id="nome4" name="nome" value=3>
+                   <label for="nome4">Francisco</label><br>
+                   <input type="radio" id="nome5" name="nome" value=4>
+                   <label for="nome5">Franco</label><br>
+                   <input type="radio" id="nome6" name="nome" value=5>
+                   <label for="nome6">Bruna</label><br>
+                   <input type="radio" id="nome7" name="nome" value=6>
+                   <label for="nome7">Rejane</label><br>
+                   <input type="radio" id="nome8" name="nome" value=7>
+                   <label for="nome8">Jessica</label><br>
+                   <input type="radio" id="nome9" name="nome" value=8>
+                   <label for="nome9">Sabrina</label><br>
+                   <input type="radio" id="nome10" name="nome" value=9>
+                   <label for="nome10">Janaina</label><br>
+                </div>
+
+                <div id="sortear">
+
+                   <input type="button" id="button_sortear" name="sorteado" value="SORTEAR" onclick="sortear()">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="abertura">
+            <div>
+                <h2>SEJA BEM-VINDO AO NOSSO JOGO</h2>
+                <h3>PARA COMEÇAR A DIVERÇÃO CLIQUE EM ENTRAR</h3>
+                <div id="seta">
+                    <img src="img\seta.gif" alt="" width="50px" height="40px" >                   
+                </div>
+                <div id="seta">
+                    <img src="img\seta.gif" alt="" width="40px" height="40px" >                   
+                </div>
+                <button onclick="tela(1)" id="button_entrar">ENTRAR</button>
+            </div>
+        </section>
+
+        <section id="resultado_sorteio">
+        </section>
+
+    </main>    
+</body>
+</html>
