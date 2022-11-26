@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
-input[type=button]{
+form fieldset{
+    margin-bottom: 10px;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], label[for=checkbox], label[for]{
     cursor: pointer;
 }

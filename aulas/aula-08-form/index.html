@@ -13,7 +13,7 @@
 <body>
     <h1>Trabalhando com formulários</h1>
 
-    <form>
+    <form id="form" onsubmit="salvarComOnSubmit(this)">
         <!-- fieldset -> tag form possui uma API de formulação, pode-se usar input submit e reset dentro da tag -->
 
         <fieldset>
@@ -21,15 +21,41 @@
             <legend>Dados básicos</legend>
             <div class="input-box">
                 <!-- label -> descrição de um elemento/formulário -->
-                <label for="text">Input text</label> 
+                <label for="text">Input text</label>
                 <input type="text" name="text" id="text" placeholder="Digite seu texto aqui">
             </div>
-
-            <div class="button-box">
-        <input type="button" value="Input button">
-    
-            
+            <br>
+            <div class="input-box">
+                <label for="password">Input password</label>
+                <input type="password" name="password" id="password">
             </div>
+            <br>
+            <div class="input-box">
+                <label for="checkbox">Input checkbox</label>
+               <input type="checkbox" name="checkbox" id="checkbox">
+               <!-- checkbox -> elemento de verdadeiro e falso -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="radio-1">Input radio 1</label>
+                <input type="radio" name="radio" id="radio-1">
+                <br>
+                <label for="radio-2">Input radio 2</label>
+                <input type="radio" name="radio" id="radio-2">
+                <br>
+                <label for="radio-3">Input radio 3</label>
+                <input type="radio" name="radio" id="radio-3">
+            </div>
+            <br>
+            <div class="button-box">
+                <input type="button" value="Button" onclick="salvarComOnClick()">
+                <!-- envia o formulário -->
+                <input type="submit" value="Submit">
+                <!-- reset limpa o formulário -->
+                <input type="reset" value="Reset">
+            </div>
+
+
         </fieldset>
 
         <fieldset>
