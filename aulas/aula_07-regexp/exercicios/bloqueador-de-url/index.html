@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Bloquear URL</title>
 </head>
 <body>
-    
+    <main>
+        <!-- Na sua empresa, percebeu-se que os usuários estão acessando indevidamente sites estranhos.
+Você então precisa criar um sistema para cadastrar URLs a serem bloquedas.
+Antes de cadastrar uma URL, seu programa deve validar se a URL está no padrão correto.
+Não se esqueça que URLs podem ter o Schema HTTP ou HTTPS.
+Depois de cadastrar algumas URLs, utilize outro campo e função para pesquisar se uma URL está liberada ou bloqueada. -->
+<label for="url">Digite a URL para cadastro</label>
+<br>
+<input id="url" type="url">
+<br><br>
+<button id="cadastrarUrl" onclick="cadastrarUrl()">Cadastrar URL</button>
+<button id="pesquisarUrl" onclick="pesquisarUrl()" >Pesquisar URL</button>
+    </main>
 </body>
 </html>
