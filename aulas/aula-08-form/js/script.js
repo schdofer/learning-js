@@ -4,9 +4,11 @@ function salvarComOnClick (){
     const form = document.getElementById("form");
     const checkbox = document.getElementById("checkbox");
     const radio = form.radio; //pega dentro do formulário o elemento com o "name" = rádio, ai não precisa pegar um por um no id
-    console.log('form:', form);
+    const number = form.number;
+    const range = form.range;
+    const tel = form.tel;
 
-    console.log('Salvando com onclick...', text, password, checkbox, radio);
+    console.log('Salvando com onclick...', text, password, checkbox, radio, number, range, tel);
 }
 
 

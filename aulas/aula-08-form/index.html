@@ -22,12 +22,80 @@
             <div class="input-box">
                 <!-- label -> descrição de um elemento/formulário -->
                 <label for="text">Input text</label>
-                <input type="text" name="text" id="text" placeholder="Digite seu texto aqui">
+                <input type="text" name="text" id="text" required minlength="5" maxlength="10" tabindex="1" placeholder="Digite seu texto aqui">
+                <!-- atributo required = pode ser true ou false, quando presente é true. -->
+                <!-- maxlength e minlength -> validação para o mínimo e máximo de caracteres -->
             </div>
             <br>
             <div class="input-box">
                 <label for="password">Input password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" tabindex="2">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="number">Input number</label>
+                <input type="number" name="number" id="number" tabindex="3"
+                min="1"
+                max="10"
+                step="0.5">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="range">Input range</label>
+                <input type="range" name="range" id="range" tabindex="4"
+                min="1"
+                max="10"
+                step="0.5">
+                <!-- funciona igual o number, só muda a apresentação -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="tel">Input tel</label>
+                <input type="tel" name="tel" id="tel" tabindex="5">
+                <!-- no dispositivo móvel, o dispositivo identifica a semantica do HTMLl e adapta o teclado -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="url">Input url</label>
+                <input type="url" name="url" id="url" tabindex="6">
+                <!-- possui uma validação de url -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="search">Input search</label>
+                <input type="search" name="search" id="search" tabindex="7">
+                <!-- usado para campos de busca -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="email">Input email</label>
+                <input type="email" name="email" id="email" tabindex="8">
+                <!-- possui uma validação de email -->
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="color">Input color</label>
+                <input type="color" name="color" id="color" tabindex="9">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="date">Input date</label>
+                <input type="date" name="date" id="date" tabindex="10">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="month">Input month</label>
+                <input type="month" name="month" id="month" tabindex="11">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="week">Input week</label>
+                <input type="week" name="week" id="week" tabindex="12">
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="time">Input url</label>
+                <input type="time" name="time" id="time" tabindex="13">
             </div>
             <br>
             <div class="input-box">
@@ -55,6 +123,7 @@
                 <input type="reset" value="Reset">
             </div>
 
+    
 
         </fieldset>
 
