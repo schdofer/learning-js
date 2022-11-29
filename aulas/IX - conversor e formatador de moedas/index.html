@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/script.js" charset="UTF-8" defer> </script>
+    <title>Exercicio IX</title>
+</head>
+<body>
+    <h1>CONVERSOR DE MOEDAS</h1>
+    
+    <main>
+       <section id="exercicio">
+            <h2>EXERCICIO</h2>
+            <h3>Conversor e formatador de moedas</h3>
+            <p>
+                Pesquise no Google o valor destas 3 moedas:<br>
+                  - Dolar americano<br>
+                  - Euro<br>
+                  - Libra esterlina<br>
+            </p>
+            <p>
+                Peça que o usuário informe um valor em real (a ser convertido).
+                Converta o valor para cada uma das moedas.
+                Formate a exibição de acordo com padrão de cada moeda e apresente o resultado ao usuário.
+                OBS.: Utilize métodos da Math API para solucionar o caso.
+                OBS,2: Não esqueça de realizar as validações e apresentar os erros ao usuário.
+            </p>
+       </section> 
+       
+       <section id="resolucao">
+           <h2>RESOLUCÃO</h2>
+           <div id="valor">
+               <label for="texto">Valor</label><br>
+               <input  type="number" id="valor_real" name="valor_real">   
+           </div>
+
+           <div id="moedas">
+                <div class="moedas-tipo dolar" onclick="converte('Dolar')">
+                </div>
+
+                <div class="moedas-tipo euro" onclick="converte('Euro')">
+                </div>
+
+                <div class="moedas-tipo libra" onclick="converte('Libras')">
+                </div>
+           </div>
+
+           <div id="resultado">
+                <div id="compra">
+                    <h4 id="compra_tipo">COMPRA</h4>
+                    <label for="compradia" id="compradia">Valor dia $:</label><br>
+                    <label for="compratotal" id="compratotal">Total $:</label>
+
+                </div>
+                <div id="venda">
+                    <h4 id="venda_tipo">VENDA</h4>
+                    <label for="vendadia" id="vendadia">Valor dia $: </label><br>
+                    <label for="vendatotal" id="vendatotal">Total R$:</label>
+                </div>
+           </div>
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>

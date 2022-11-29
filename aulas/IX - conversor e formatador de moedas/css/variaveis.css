@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+:root{
+    --font-default: 'Courier New', Courier, monospace;
+    --bg-default: black;
+}
+
+.ligth{
+    --bg-default:white;
+}
+
+.dark{
+    --bg-default:black;
+}
+

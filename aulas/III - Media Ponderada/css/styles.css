@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('variaveis.css');
+@import url('reset.css');
+
+main{
+    width: 100%;
+    display: flex;   
+}
+
+main section{
+    width: 48%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+    margin: 1%;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+main section h2{
+    margin: 5%;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+main section h3{
+    margin: 3%;
+}
+
+main section label{
+    margin: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main section input{
+    margin: 2%;
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+    padding: 5px;    
+}
+
+#valor{
+    text-align: left;
+    width: 40%;
+}
+#valor label{
+    margin: 20%;
+}
+
+#moedas{
+    
+}
+
+

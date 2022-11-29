@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" charset="UTF-8" defer></script>
+    <title>Form</title>
+</head>
+<body>
+    
+    <h1>Trabalhando com formulários</h1>
+    <form id="form" onsubmit="salvarComOnSubmit(this)">
+         <fieldset>
+                <legend>dados Básicos</legend>
+                <div class="input-box">
+                    <label for="text">Input text</label>
+                    <input type="text" name="text" id="text" 
+                         required 
+                         autofocus
+                         autocapitalize
+                         pattern="//"
+                         minlength="1" maxlength="10"
+                         tabindex="1">
+                </div>
+                <div class="input-box">
+                    <label for="number">Input number</label>
+                    <input type="number" name="number" id="number" 
+                          min="1"
+                          max="10"
+                          step="0.5">
+                </div>
+                <div class="input-box">
+                    <label for="range">Input range</label>
+                    <input type="range" name="range" id="range" 
+                          min="1"
+                          max="10"
+                          step="0.5">
+                </div>
+                <div class="input-box">
+                    <label for="tel">Input tel</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                 <div class="input-box">
+                    <label for="tel">Input url</label>
+                    <input type="url" name="url" id="url">
+                </div>
+                <div class="input-box">
+                    <label for="email">Input email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-box">
+                    <label for="tel">Input search</label>
+                    <input type="search" name="search" id="search">
+                </div>
+                <div class="input-box">
+                    <label for="tel">Input color</label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div class="input-box">
+                    <label for="tel">Input data</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="input-box">
+                    <label for="month">Input month</label>
+                    <input type="month" name="month" id="month">
+                </div>
+                <div class="input-box">
+                    <label for="week">Input month</label>
+                    <input type="week" name="week" id="week">
+                </div>
+                <div class="input-box">
+                    <label for="time">Input time</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div class="input-box">
+                    <label for="password">Input password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="input-box">
+                    <label for="checkbox">Input checkbox</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </div>
+                
+                <div class="input-box">
+                    <label for="radio-1">Input radio 1</label>
+                    <input type="radio" name="radio" id="radio-1"><br>
+                    <label for="radio-2">Input radio 2</label>
+                    <input type="radio" name="radio" id="radio-2"><br>
+                    <label for="radio-3">Input radio 3</label>
+                    <input type="radio" name="radio" id="radio-3"><br>
+
+                </div>
+                <div class="button-box">
+                    <input type="button" value="Button" onclick="salvarComonclick()">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </fieldset>
+         <fieldset>
+               <legend>dados de endereço</legend>
+         </fieldset>
+
+    </form>    
+
+</body>
+</html>
