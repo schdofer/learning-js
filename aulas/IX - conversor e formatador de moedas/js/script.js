@@ -8,21 +8,21 @@ function converte(moeda) {
     
     let url = '';
     let data = new Date();
-    let datadia = (data.getMonth() + '-'+ data.getDay() + '-' + data.getFullYear());
+    let datadia = ((data.getMonth()+1) + '-'+ data.getDate() + '-' + data.getFullYear());
     
     switch (moeda) {
         case 'Dolar':
         {    
-            url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=" + datadia + "&$format=json";
+            url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='" + datadia + "'&$format=json";
             break;
         }
         case 'Euro':
         {
-            url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$skip=0&$filter=EURO&$format=json";
+            url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='EUR'&@dataCotacao='" + datadia + "'&$top=1&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao";
         }
         case 'Libras':
         {
-
+            url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='GBP'&@dataCotacao='" + datadia + "'&$top=1&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao";
         }
     };
     
@@ -31,12 +31,15 @@ function converte(moeda) {
     request.open('GET', url , true );
     request.send();
     
-    console.log(request.responseText);
     request.onload = function(){
-
-        if (request.readyState == 4 && request.status == 200){
+      
+      try{
+           console.log(request);
+           if (request.status != 200)
+               throw new Error(request.status);
+  
            let resposta = JSON.parse(request.responseText);
-
+           
            let valores = resposta.value[0];
 
            document.getElementById('compra_tipo').innerHTML = 'COMPRA: ' + moeda;
@@ -57,10 +60,10 @@ function converte(moeda) {
            console.log('venda: ' , valores.cotacaoVenda);
            console.log('hora: ' ,valores.dataHoraCotacao);
         }
-        else{
-
+        catch(error){
+            console.log(error); 
+            alert('Erro de comunicação: ' + error.message);
         }
-
     }
 };
 
