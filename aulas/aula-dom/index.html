@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propagação de Evento</title>
+
+
+    <style>
+        #minha-secao {
+            width: 50%;
+            height: 300px;
+            background-color: pink;
+        }
+
+        main {
+            background-color: blueviolet;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+
+        <section id="minha-secao">
+
+
+            <button id="botao">Clique-me</button>
+            <br><br>
+            <a href="https://www.google.com.br/">Cliquei no link</a>
+        </section>
+
+
+    </main>
+
+    <script>
+        const main = document.querySelector('main');
+        main.addEventListener('click', clickMain);
+
+        const secao = document.querySelector('#minha-secao')
+        secao.addEventListener('click', (event) => clickSection(event))
+
+        const botao = document.querySelector('#botao')
+        botao.addEventListener('click', (event) => clickButton(event))
+
+        const link = document.querySelector('a')
+        link.addEventListener('click', (event) => clickLink(event))
+
+
+        function clickMain() {
+            alert('cliquei no main')
+        }
+
+
+
+        function clickSection(evento) {
+            evento.stopPropagation()
+            alert('cliquei no Section')
+        }
+
+
+        function clickButton(oEvento) {
+            oEvento.stopPropagation() //para os eventos
+            oEvento.preventDefault() //
+            alert('cliquei no botão')
+        }
+
+        function clickLink(evento) {
+            evento.stopPropagation() //para os eventos
+            evento.preventDefault() //não ativou o link para ir ao google -> para de executar o comportamento padrão
+            alert('cliquei no link')
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
