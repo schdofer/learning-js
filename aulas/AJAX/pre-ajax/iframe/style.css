@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 150px;
+    background-color: #219ebc;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px;
+}
+
+header a {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+main {
+    height: calc(100vh - 200px);
+    background-color: #8ecae6;
+    padding: 20px;
+}
+
+main iframe{
+    width: 100%;
+    height: calc(100vh - 240px);
+    border: none;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    background-color:#023047;
+    color: white;
+    padding: 15px;
+}

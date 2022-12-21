@@ -49,7 +49,7 @@ main section p {
 
 #resolucao button {
     padding: 5px;
-    cursor: pointer;
+    cursor: url(https://imagensemoldes.com.br/wp-content/uploads/2020/06/Desenho-de-Pincel-PNG.png), progress;
     background-color: #fff0f3;
     color: #5158bb;
     font-weight: bold;
