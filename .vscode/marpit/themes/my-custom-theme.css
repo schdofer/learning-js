@@ -1,0 +1,62 @@
+/* @theme my-custom-theme */
+
+@import 'base-theme';
+
+section.new-chapter {
+  background-color: #33489A !important;
+  color: white;
+}
+section.sub-chapter {
+  background-color: #53C248 !important;
+  color: white;
+}
+section.exercise {
+  background-color: #AC5539 !important;
+  color: white;
+}
+section.exercise ol li, section.exercise ul li, section.exercise p {
+  font-size: 0.7em;
+}
+section.left h1, section.left h2, section.left h3 {
+  text-align: left;
+}
+section.left ol, section.left ol li, section.left ul, section.left ul li {
+  text-align: left;
+}
+section.small ol li, section.small ul li, section.small table {
+  font-size: 0.8em;
+}
+section.ultra-small ol li, section.ultra-small ul li, section.ultra-small table {
+  font-size: 0.6em;
+}
+section::after {
+  font-weight: bold;
+  font-size: 0.30em !important;
+  text-align: right !important;
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+
+
+/* Split 2 columns Slide */
+section.split ul li {
+  font-size: 0.55em;
+}
+section.split {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+      "slideheading slideheading"
+      "leftpanel rightpanel";
+}
+/* debug */
+/* section.split h3, 
+section.split .ldiv, 
+section.split .rdiv { border: 1.5pt dashed dimgray; } */
+section.split h3 {
+  grid-area: slideheading;
+  font-size: 50px;
+}
+section.split .ldiv { grid-area: leftpanel; }
+section.split .rdiv { grid-area: rightpanel; }

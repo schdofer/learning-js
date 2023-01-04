@@ -1,0 +1,20 @@
+// Please put `.vscode/settings.json` on your workspace
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "off",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "markdown.marp.themes": [
+    "./.vscode/marpit/themes/base-theme.css",
+    "./.vscode/marpit/themes/my-custom-theme.css"
+  ],
+  "markdown.marp.enableHtml": true
+}

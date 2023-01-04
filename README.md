@@ -2,6 +2,9 @@
 
 Estudos de Javascript
 
+Para criar os Slides do curso foi utilizada a extensão "Marp for VS Code".
+Desta forma conseguimos mander o código dos slides aqui no Git e gerar automticamente o PDF/PPTX/HTML quando desejado.
+
 ## Características
 
 1. Tipagem fraca e dinâmica
